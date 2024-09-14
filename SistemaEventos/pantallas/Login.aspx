@@ -33,9 +33,7 @@
                 <asp:Label ID="lblContrasena" CssClass="label" runat="server" Text="Contraseña"></asp:Label>
                 <i class='bx bxs-lock ii'></i>
             </div>
-           <div class="register-link">
-                <p>No tienes una cuenta crea una <a href="Registro.aspx">aqui</a></p>
-            </div>
+          
             <div class="row">
                 <asp:Button CssClass="boton" ID="btnIngresar" runat="server" Text="Ingresar"/>
             </div>

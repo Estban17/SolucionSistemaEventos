@@ -11,17 +11,17 @@ namespace SistemaEventos.pantallas
 {
 
 
-    public partial class Login
+    public partial class RegiAct
     {
 
         /// <summary>
-        /// Control FormLogi.
+        /// Control FormRegisEvent.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm FormLogi;
+        protected global::System.Web.UI.HtmlControls.HtmlForm FormRegisEvent;
 
         /// <summary>
         /// Control lblBienvenida.
@@ -33,48 +33,48 @@ namespace SistemaEventos.pantallas
         protected global::System.Web.UI.WebControls.Label lblBienvenida;
 
         /// <summary>
-        /// Control tbUsuario.
+        /// Control tbEvent.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbUsuario;
+        protected global::System.Web.UI.WebControls.TextBox tbEvent;
 
         /// <summary>
-        /// Control lblUsuario.
+        /// Control lblEvent.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUsuario;
+        protected global::System.Web.UI.WebControls.Label lblEvent;
 
         /// <summary>
-        /// Control tbContrasena.
+        /// Control tbUser.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbContrasena;
+        protected global::System.Web.UI.WebControls.TextBox tbUser;
 
         /// <summary>
-        /// Control lblContrasena.
+        /// Control lblUser.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblContrasena;
+        protected global::System.Web.UI.WebControls.Label lblUser;
 
         /// <summary>
-        /// Control btnIngresar.
+        /// Control btnRegistrarEvent.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnIngresar;
+        protected global::System.Web.UI.WebControls.Button btnRegistrarEvent;
     }
 }
