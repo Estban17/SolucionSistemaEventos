@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="../estilos/Logi.css" rel="stylesheet" />
-    <title>Registrar Actividad</title>
+    <title>Registro</title>
 </head>
 <body>
 
@@ -18,12 +18,18 @@
         <form id="FormRegisEvent" runat="server">
 
             <div class="row">
-                <asp:Label CssClass="hh1" ID="lblBienvenida" runat="server" Text="Registro para un evento"></asp:Label>
+                <asp:Label CssClass="hh1" ID="lblBienvenida" runat="server" Text="Registro"></asp:Label>
             </div>
 
             <div class="input-box">
                 <asp:TextBox ID="tbEvent" CssClass="input" runat="server" placeholder=""></asp:TextBox>
                 <asp:Label ID="lblEvent" CssClass="label" runat="server" Text="Evento"></asp:Label>
+                <i class='bx bxs-calendar-event ii'></i>
+            </div>
+            
+            <div class="input-box">
+                <asp:TextBox ID="TextBox1" CssClass="input" runat="server" placeholder=""></asp:TextBox>
+                <asp:Label ID="Label1" CssClass="label" runat="server" Text="Actividad"></asp:Label>
                 <i class='bx bxs-calendar-event ii'></i>
             </div>
 

@@ -70,8 +70,10 @@
     <Content Include="estilos\Logi.css" />
     <Content Include="img\fondo.jpg" />
     <Content Include="pantallas\Login.aspx" />
+    <Content Include="pantallas\Participante.aspx" />
     <Content Include="pantallas\RegiEvent.aspx" />
     <Content Include="pantallas\CrearEvent.aspx" />
+    <Content Include="pantallas\CrearAct.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +83,13 @@
     </Compile>
     <Compile Include="pantallas\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pantallas\Participante.aspx.cs">
+      <DependentUpon>Participante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pantallas\Participante.aspx.designer.cs">
+      <DependentUpon>Participante.aspx</DependentUpon>
     </Compile>
     <Compile Include="pantallas\RegiEvent.aspx.cs">
       <DependentUpon>RegiEvent.aspx</DependentUpon>
@@ -95,6 +104,13 @@
     </Compile>
     <Compile Include="pantallas\CrearEvent.aspx.designer.cs">
       <DependentUpon>CrearEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pantallas\CrearAct.aspx.cs">
+      <DependentUpon>CrearAct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pantallas\CrearAct.aspx.designer.cs">
+      <DependentUpon>CrearAct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
