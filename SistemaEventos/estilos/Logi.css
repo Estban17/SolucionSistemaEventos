@@ -1,0 +1,127 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+   //margin: 0;
+   //padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    margin-left: 300px;
+    margin-top: 90px;
+    //justify-content: center;
+    //align-items: center;
+    min-height: 100vh;
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+
+.wrapper {
+    width: 420px;
+    height: 420px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 30px 40px;
+    border: 1px solid rgba(255, 0, 0, 0);
+    /* border: 2px solid rgb(255, 255, 255); */
+    /* background: transparent; */
+    background-color: white;
+    backdrop-filter: blur(14px);
+}
+
+    .wrapper .hh1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .wrapper .input-box {
+        width: 100%;
+        height: 50px;
+        margin: 30px 0;
+    }
+
+.input-box .input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(105, 27, 50, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+    border-bottom-color: rgba(123, 10, 44, 1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.input-box .label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-box .input:focus + .label,
+.input-box textarea:focus + .label,
+.input-box .input:not(:placeholder-shown) + .label,
+.input-box textarea:not(:placeholder-shown) + .label {
+    top: 5px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.input-box .input::placeholder {
+    color: black;
+}
+
+.input-box {
+    position: relative; /* Establece la posición relativa para el contenedor */
+    margin: 30px 0;
+}
+
+    .input-box .ii {
+        position: absolute; /* Establece la posición absoluta para el icono */
+        top: 50%; /* Coloca el icono en la mitad vertical del input */
+        transform: translateY(-50%); /* Ajusta la posición vertical del icono */
+        right: 20px; /* Ajusta la posición horizontal del icono */
+    }
+
+.wrapper .boton {
+    width: 100%;
+    height: 45px;
+    background-color: #7B0A2C;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.3s;
+}
+
+    .wrapper .boton:hover {
+        color: white;
+        transform: scale(1.1);
+    }
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+    .register-link p a:hover {
+        text-decoration: underline;
+    }
