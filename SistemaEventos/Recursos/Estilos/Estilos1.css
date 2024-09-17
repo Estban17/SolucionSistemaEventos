@@ -1,0 +1,136 @@
+﻿/* Estilos personalizados */
+.bg-custom {
+    background-color: #000; /* Vino */
+}
+
+/* Barra Lateral */
+.sidebar {
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #800000; /* Negro */
+    color: #fff; /* Texto blanco */
+    overflow-y: auto;
+}
+
+/* Barra Superior */
+.navbar {
+    width: calc(100% - 200px); /* Ajusta el ancho según el ancho de la barra lateral */
+    margin-left: 200px; /* Ajusta el margen izquierdo según el ancho de la barra lateral */
+}
+
+/* Contenido Principal */
+#page-content-wrapper {
+    margin-left: 200px; /* Ajusta el margen izquierdo según el ancho de la barra lateral */
+    padding: 20px;
+    width: calc(100% - 200px); /* Ajusta el ancho según el ancho de la barra lateral */
+    margin-top: 56px; /* Deja espacio para la barra de navegación */
+}
+
+/* Estilo del enlace de navegación */
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff; /* Texto blanco */
+}
+
+.dropdown-menu-end {
+    right: 0;
+    left: auto;
+}
+
+.btn-transparent {
+    border: none;
+    background: transparent;
+}
+
+/* Efectos de Hover */
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos del menú desplegable */
+.dropdown-menu {
+    background-color: #343a40; /* Color del menú desplegable */
+    border-radius: 0.25rem;
+}
+
+    .dropdown-menu .dropdown-item {
+        color: #fff; /* Texto blanco */
+    }
+/* Centrar elementos específicos en la barra lateral */
+.sidebar-center {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio inferior si es necesario */
+}
+
+    .sidebar-center .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0; /* Elimina márgenes para alinear al centro */
+    }
+
+        .sidebar-center .navbar-brand img {
+            margin-right: 8px; /* Espacio entre el logo y el texto */
+        }
+
+/* Estilo para los iconos dentro del botón en la barra superior */
+.navbar .dropdown-toggle i {
+    color: #fff; /* Color blanco para el icono */
+}
+/* Estilos para el formulario horizontal */
+.form-horizontal .form-group {
+    margin-bottom: 1rem; /* Espacio inferior entre campos */
+}
+
+    .form-horizontal .form-group label {
+        text-align: right;
+        margin-bottom: 0;
+    }
+
+.form-horizontal .form-control {
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Estilo personalizado para el botón */
+.custom-btn {
+    background-color: #800000; /* Color de fondo igual al de la barra lateral */
+    border-color: #800000; /* Color del borde igual al de la barra lateral */
+    padding: 0.75rem 1.5rem; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño de fuente */
+    border-radius: 0.75rem; /* Bordes más redondeados */
+    color: #ffffff; /* Color del texto */
+}
+
+    .custom-btn:hover {
+        background-color: #BA0000; /* Color de fondo más oscuro en hover */
+        border-color: #BA0000; /* Color del borde más oscuro en hover */
+    }
+
+/* Ajuste para el formulario en pantallas más pequeñas */
+@media (max-width: 767.98px) {
+    .form-horizontal .form-group {
+        flex-direction: column;
+    }
+
+        .form-horizontal .form-group label {
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
+}
+
+/* Estilo personalizado para reducir a la mitad el ancho de las cajas de texto */
+.half-width {
+    width: 50%;
+}

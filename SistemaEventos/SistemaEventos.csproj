@@ -67,13 +67,494 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CreateEvent.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="FormRegP.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="IndexP.aspx" />
+    <Content Include="LoginP.aspx" />
+    <Content Include="RecPass.aspx" />
+    <Content Include="Recursos\assets\css\bootstrap.min.css" />
+    <Content Include="Recursos\assets\css\demo.css" />
+    <Content Include="Recursos\assets\css\fonts.css" />
+    <Content Include="Recursos\assets\css\fonts.min.css" />
+    <Content Include="Recursos\assets\css\kaiadmin.css" />
+    <Content Include="Recursos\assets\css\kaiadmin.min.css" />
+    <Content Include="Recursos\assets\css\plugins.css" />
+    <Content Include="Recursos\assets\css\plugins.min.css" />
+    <Content Include="Recursos\assets\fonts\fontawesome\fa-brands-400.svg" />
+    <Content Include="Recursos\assets\fonts\fontawesome\fa-regular-400.svg" />
+    <Content Include="Recursos\assets\fonts\fontawesome\fa-solid-900.svg" />
+    <Content Include="Recursos\assets\fonts\simple-line-icons\Simple-Line-Icons.svg" />
+    <Content Include="Recursos\assets\img\arashmil.jpg" />
+    <Content Include="Recursos\assets\img\bg-404.jpeg" />
+    <Content Include="Recursos\assets\img\blogpost.jpg" />
+    <Content Include="Recursos\assets\img\chadengle.jpg" />
+    <Content Include="Recursos\assets\img\examples\example1-300x300.jpg" />
+    <Content Include="Recursos\assets\img\examples\example1.jpeg" />
+    <Content Include="Recursos\assets\img\examples\example10-300x300.jpg" />
+    <Content Include="Recursos\assets\img\examples\example10.jpeg" />
+    <Content Include="Recursos\assets\img\examples\example11-300x300.jpg" />
+    <Content Include="Recursos\assets\img\examples\example11.jpeg" />
+    <Content Include="Recursos\assets\img\examples\example12-300x300.jpg" />
+    <Content Include="Recursos\assets\img\examples\example12.jpeg" />
+    <Content Include="Recursos\assets\img\examples\example2-300x300.jpg" />
+    <Content Include="Recursos\assets\img\examples\example2.jpeg" />
+    <Content Include="Recursos\assets\img\examples\example3-300x300.jpg" />
+    <Content Include="Recursos\assets\img\examples\example3.jpeg" />
+    <Content Include="Recursos\assets\img\examples\example4-300x300.jpg" />
+    <Content Include="Recursos\assets\img\examples\example4.jpeg" />
+    <Content Include="Recursos\assets\img\examples\example5-300x300.jpg" />
+    <Content Include="Recursos\assets\img\examples\example5.jpeg" />
+    <Content Include="Recursos\assets\img\examples\example6-300x300.jpg" />
+    <Content Include="Recursos\assets\img\examples\example6.jpeg" />
+    <Content Include="Recursos\assets\img\examples\example7-300x300.jpg" />
+    <Content Include="Recursos\assets\img\examples\example7.jpeg" />
+    <Content Include="Recursos\assets\img\examples\example8-300x300.jpg" />
+    <Content Include="Recursos\assets\img\examples\example8.jpeg" />
+    <Content Include="Recursos\assets\img\examples\example9-300x300.jpg" />
+    <Content Include="Recursos\assets\img\examples\example9.jpeg" />
+    <Content Include="Recursos\assets\img\examples\logo.svg" />
+    <Content Include="Recursos\assets\img\examples\logo1.svg" />
+    <Content Include="Recursos\assets\img\examples\logo2.svg" />
+    <Content Include="Recursos\assets\img\examples\logoinvoice.svg" />
+    <Content Include="Recursos\assets\img\examples\product1.jpg" />
+    <Content Include="Recursos\assets\img\examples\product10.jpeg" />
+    <Content Include="Recursos\assets\img\examples\product11.jpeg" />
+    <Content Include="Recursos\assets\img\examples\product12.jpeg" />
+    <Content Include="Recursos\assets\img\examples\product2.jpg" />
+    <Content Include="Recursos\assets\img\examples\product3.jpg" />
+    <Content Include="Recursos\assets\img\examples\product4.jpg" />
+    <Content Include="Recursos\assets\img\examples\product5.jpg" />
+    <Content Include="Recursos\assets\img\examples\product6.jpg" />
+    <Content Include="Recursos\assets\img\examples\product7.jpg" />
+    <Content Include="Recursos\assets\img\examples\product8.jpg" />
+    <Content Include="Recursos\assets\img\flags\ad.png" />
+    <Content Include="Recursos\assets\img\flags\ae.png" />
+    <Content Include="Recursos\assets\img\flags\af.png" />
+    <Content Include="Recursos\assets\img\flags\ag.png" />
+    <Content Include="Recursos\assets\img\flags\ai.png" />
+    <Content Include="Recursos\assets\img\flags\al.png" />
+    <Content Include="Recursos\assets\img\flags\am.png" />
+    <Content Include="Recursos\assets\img\flags\an.png" />
+    <Content Include="Recursos\assets\img\flags\ao.png" />
+    <Content Include="Recursos\assets\img\flags\ar.png" />
+    <Content Include="Recursos\assets\img\flags\as.png" />
+    <Content Include="Recursos\assets\img\flags\at.png" />
+    <Content Include="Recursos\assets\img\flags\au.png" />
+    <Content Include="Recursos\assets\img\flags\aw.png" />
+    <Content Include="Recursos\assets\img\flags\ax.png" />
+    <Content Include="Recursos\assets\img\flags\az.png" />
+    <Content Include="Recursos\assets\img\flags\ba.png" />
+    <Content Include="Recursos\assets\img\flags\bb.png" />
+    <Content Include="Recursos\assets\img\flags\bd.png" />
+    <Content Include="Recursos\assets\img\flags\be.png" />
+    <Content Include="Recursos\assets\img\flags\bf.png" />
+    <Content Include="Recursos\assets\img\flags\bg.png" />
+    <Content Include="Recursos\assets\img\flags\bh.png" />
+    <Content Include="Recursos\assets\img\flags\bi.png" />
+    <Content Include="Recursos\assets\img\flags\bj.png" />
+    <Content Include="Recursos\assets\img\flags\bm.png" />
+    <Content Include="Recursos\assets\img\flags\bn.png" />
+    <Content Include="Recursos\assets\img\flags\bo.png" />
+    <Content Include="Recursos\assets\img\flags\br.png" />
+    <Content Include="Recursos\assets\img\flags\bs.png" />
+    <Content Include="Recursos\assets\img\flags\bt.png" />
+    <Content Include="Recursos\assets\img\flags\bv.png" />
+    <Content Include="Recursos\assets\img\flags\bw.png" />
+    <Content Include="Recursos\assets\img\flags\by.png" />
+    <Content Include="Recursos\assets\img\flags\bz.png" />
+    <Content Include="Recursos\assets\img\flags\ca.png" />
+    <Content Include="Recursos\assets\img\flags\catalonia.png" />
+    <Content Include="Recursos\assets\img\flags\cc.png" />
+    <Content Include="Recursos\assets\img\flags\cd.png" />
+    <Content Include="Recursos\assets\img\flags\cf.png" />
+    <Content Include="Recursos\assets\img\flags\cg.png" />
+    <Content Include="Recursos\assets\img\flags\ch.png" />
+    <Content Include="Recursos\assets\img\flags\ci.png" />
+    <Content Include="Recursos\assets\img\flags\ck.png" />
+    <Content Include="Recursos\assets\img\flags\cl.png" />
+    <Content Include="Recursos\assets\img\flags\cm.png" />
+    <Content Include="Recursos\assets\img\flags\cn.png" />
+    <Content Include="Recursos\assets\img\flags\co.png" />
+    <Content Include="Recursos\assets\img\flags\cr.png" />
+    <Content Include="Recursos\assets\img\flags\cs.png" />
+    <Content Include="Recursos\assets\img\flags\cu.png" />
+    <Content Include="Recursos\assets\img\flags\cv.png" />
+    <Content Include="Recursos\assets\img\flags\cx.png" />
+    <Content Include="Recursos\assets\img\flags\cy.png" />
+    <Content Include="Recursos\assets\img\flags\cz.png" />
+    <Content Include="Recursos\assets\img\flags\de.png" />
+    <Content Include="Recursos\assets\img\flags\dj.png" />
+    <Content Include="Recursos\assets\img\flags\dk.png" />
+    <Content Include="Recursos\assets\img\flags\dm.png" />
+    <Content Include="Recursos\assets\img\flags\do.png" />
+    <Content Include="Recursos\assets\img\flags\dz.png" />
+    <Content Include="Recursos\assets\img\flags\ec.png" />
+    <Content Include="Recursos\assets\img\flags\ee.png" />
+    <Content Include="Recursos\assets\img\flags\eg.png" />
+    <Content Include="Recursos\assets\img\flags\eh.png" />
+    <Content Include="Recursos\assets\img\flags\england.png" />
+    <Content Include="Recursos\assets\img\flags\er.png" />
+    <Content Include="Recursos\assets\img\flags\es.png" />
+    <Content Include="Recursos\assets\img\flags\et.png" />
+    <Content Include="Recursos\assets\img\flags\europeanunion.png" />
+    <Content Include="Recursos\assets\img\flags\fam.png" />
+    <Content Include="Recursos\assets\img\flags\fi.png" />
+    <Content Include="Recursos\assets\img\flags\fj.png" />
+    <Content Include="Recursos\assets\img\flags\fk.png" />
+    <Content Include="Recursos\assets\img\flags\fm.png" />
+    <Content Include="Recursos\assets\img\flags\fo.png" />
+    <Content Include="Recursos\assets\img\flags\fr.png" />
+    <Content Include="Recursos\assets\img\flags\ga.png" />
+    <Content Include="Recursos\assets\img\flags\gb.png" />
+    <Content Include="Recursos\assets\img\flags\gd.png" />
+    <Content Include="Recursos\assets\img\flags\ge.png" />
+    <Content Include="Recursos\assets\img\flags\gf.png" />
+    <Content Include="Recursos\assets\img\flags\gh.png" />
+    <Content Include="Recursos\assets\img\flags\gi.png" />
+    <Content Include="Recursos\assets\img\flags\gl.png" />
+    <Content Include="Recursos\assets\img\flags\gm.png" />
+    <Content Include="Recursos\assets\img\flags\gn.png" />
+    <Content Include="Recursos\assets\img\flags\gp.png" />
+    <Content Include="Recursos\assets\img\flags\gq.png" />
+    <Content Include="Recursos\assets\img\flags\gr.png" />
+    <Content Include="Recursos\assets\img\flags\gs.png" />
+    <Content Include="Recursos\assets\img\flags\gt.png" />
+    <Content Include="Recursos\assets\img\flags\gu.png" />
+    <Content Include="Recursos\assets\img\flags\gw.png" />
+    <Content Include="Recursos\assets\img\flags\gy.png" />
+    <Content Include="Recursos\assets\img\flags\hk.png" />
+    <Content Include="Recursos\assets\img\flags\hm.png" />
+    <Content Include="Recursos\assets\img\flags\hn.png" />
+    <Content Include="Recursos\assets\img\flags\hr.png" />
+    <Content Include="Recursos\assets\img\flags\ht.png" />
+    <Content Include="Recursos\assets\img\flags\hu.png" />
+    <Content Include="Recursos\assets\img\flags\id.png" />
+    <Content Include="Recursos\assets\img\flags\ie.png" />
+    <Content Include="Recursos\assets\img\flags\il.png" />
+    <Content Include="Recursos\assets\img\flags\in.png" />
+    <Content Include="Recursos\assets\img\flags\io.png" />
+    <Content Include="Recursos\assets\img\flags\iq.png" />
+    <Content Include="Recursos\assets\img\flags\ir.png" />
+    <Content Include="Recursos\assets\img\flags\is.png" />
+    <Content Include="Recursos\assets\img\flags\it.png" />
+    <Content Include="Recursos\assets\img\flags\jm.png" />
+    <Content Include="Recursos\assets\img\flags\jo.png" />
+    <Content Include="Recursos\assets\img\flags\jp.png" />
+    <Content Include="Recursos\assets\img\flags\ke.png" />
+    <Content Include="Recursos\assets\img\flags\kg.png" />
+    <Content Include="Recursos\assets\img\flags\kh.png" />
+    <Content Include="Recursos\assets\img\flags\ki.png" />
+    <Content Include="Recursos\assets\img\flags\km.png" />
+    <Content Include="Recursos\assets\img\flags\kn.png" />
+    <Content Include="Recursos\assets\img\flags\kp.png" />
+    <Content Include="Recursos\assets\img\flags\kr.png" />
+    <Content Include="Recursos\assets\img\flags\kw.png" />
+    <Content Include="Recursos\assets\img\flags\ky.png" />
+    <Content Include="Recursos\assets\img\flags\kz.png" />
+    <Content Include="Recursos\assets\img\flags\la.png" />
+    <Content Include="Recursos\assets\img\flags\lb.png" />
+    <Content Include="Recursos\assets\img\flags\lc.png" />
+    <Content Include="Recursos\assets\img\flags\li.png" />
+    <Content Include="Recursos\assets\img\flags\lk.png" />
+    <Content Include="Recursos\assets\img\flags\lr.png" />
+    <Content Include="Recursos\assets\img\flags\ls.png" />
+    <Content Include="Recursos\assets\img\flags\lt.png" />
+    <Content Include="Recursos\assets\img\flags\lu.png" />
+    <Content Include="Recursos\assets\img\flags\lv.png" />
+    <Content Include="Recursos\assets\img\flags\ly.png" />
+    <Content Include="Recursos\assets\img\flags\ma.png" />
+    <Content Include="Recursos\assets\img\flags\mc.png" />
+    <Content Include="Recursos\assets\img\flags\md.png" />
+    <Content Include="Recursos\assets\img\flags\me.png" />
+    <Content Include="Recursos\assets\img\flags\mg.png" />
+    <Content Include="Recursos\assets\img\flags\mh.png" />
+    <Content Include="Recursos\assets\img\flags\mk.png" />
+    <Content Include="Recursos\assets\img\flags\ml.png" />
+    <Content Include="Recursos\assets\img\flags\mm.png" />
+    <Content Include="Recursos\assets\img\flags\mn.png" />
+    <Content Include="Recursos\assets\img\flags\mo.png" />
+    <Content Include="Recursos\assets\img\flags\mp.png" />
+    <Content Include="Recursos\assets\img\flags\mq.png" />
+    <Content Include="Recursos\assets\img\flags\mr.png" />
+    <Content Include="Recursos\assets\img\flags\ms.png" />
+    <Content Include="Recursos\assets\img\flags\mt.png" />
+    <Content Include="Recursos\assets\img\flags\mu.png" />
+    <Content Include="Recursos\assets\img\flags\mv.png" />
+    <Content Include="Recursos\assets\img\flags\mw.png" />
+    <Content Include="Recursos\assets\img\flags\mx.png" />
+    <Content Include="Recursos\assets\img\flags\my.png" />
+    <Content Include="Recursos\assets\img\flags\mz.png" />
+    <Content Include="Recursos\assets\img\flags\na.png" />
+    <Content Include="Recursos\assets\img\flags\nc.png" />
+    <Content Include="Recursos\assets\img\flags\ne.png" />
+    <Content Include="Recursos\assets\img\flags\nf.png" />
+    <Content Include="Recursos\assets\img\flags\ng.png" />
+    <Content Include="Recursos\assets\img\flags\ni.png" />
+    <Content Include="Recursos\assets\img\flags\nl.png" />
+    <Content Include="Recursos\assets\img\flags\no.png" />
+    <Content Include="Recursos\assets\img\flags\np.png" />
+    <Content Include="Recursos\assets\img\flags\nr.png" />
+    <Content Include="Recursos\assets\img\flags\nu.png" />
+    <Content Include="Recursos\assets\img\flags\nz.png" />
+    <Content Include="Recursos\assets\img\flags\om.png" />
+    <Content Include="Recursos\assets\img\flags\pa.png" />
+    <Content Include="Recursos\assets\img\flags\pe.png" />
+    <Content Include="Recursos\assets\img\flags\pf.png" />
+    <Content Include="Recursos\assets\img\flags\pg.png" />
+    <Content Include="Recursos\assets\img\flags\ph.png" />
+    <Content Include="Recursos\assets\img\flags\pk.png" />
+    <Content Include="Recursos\assets\img\flags\pl.png" />
+    <Content Include="Recursos\assets\img\flags\pm.png" />
+    <Content Include="Recursos\assets\img\flags\pn.png" />
+    <Content Include="Recursos\assets\img\flags\pr.png" />
+    <Content Include="Recursos\assets\img\flags\ps.png" />
+    <Content Include="Recursos\assets\img\flags\pt.png" />
+    <Content Include="Recursos\assets\img\flags\pw.png" />
+    <Content Include="Recursos\assets\img\flags\py.png" />
+    <Content Include="Recursos\assets\img\flags\qa.png" />
+    <Content Include="Recursos\assets\img\flags\re.png" />
+    <Content Include="Recursos\assets\img\flags\readme.txt" />
+    <Content Include="Recursos\assets\img\flags\ro.png" />
+    <Content Include="Recursos\assets\img\flags\rs.png" />
+    <Content Include="Recursos\assets\img\flags\ru.png" />
+    <Content Include="Recursos\assets\img\flags\rw.png" />
+    <Content Include="Recursos\assets\img\flags\sa.png" />
+    <Content Include="Recursos\assets\img\flags\sb.png" />
+    <Content Include="Recursos\assets\img\flags\sc.png" />
+    <Content Include="Recursos\assets\img\flags\scotland.png" />
+    <Content Include="Recursos\assets\img\flags\sd.png" />
+    <Content Include="Recursos\assets\img\flags\se.png" />
+    <Content Include="Recursos\assets\img\flags\sg.png" />
+    <Content Include="Recursos\assets\img\flags\sh.png" />
+    <Content Include="Recursos\assets\img\flags\si.png" />
+    <Content Include="Recursos\assets\img\flags\sj.png" />
+    <Content Include="Recursos\assets\img\flags\sk.png" />
+    <Content Include="Recursos\assets\img\flags\sl.png" />
+    <Content Include="Recursos\assets\img\flags\sm.png" />
+    <Content Include="Recursos\assets\img\flags\sn.png" />
+    <Content Include="Recursos\assets\img\flags\so.png" />
+    <Content Include="Recursos\assets\img\flags\sr.png" />
+    <Content Include="Recursos\assets\img\flags\st.png" />
+    <Content Include="Recursos\assets\img\flags\sv.png" />
+    <Content Include="Recursos\assets\img\flags\sy.png" />
+    <Content Include="Recursos\assets\img\flags\sz.png" />
+    <Content Include="Recursos\assets\img\flags\tc.png" />
+    <Content Include="Recursos\assets\img\flags\td.png" />
+    <Content Include="Recursos\assets\img\flags\tf.png" />
+    <Content Include="Recursos\assets\img\flags\tg.png" />
+    <Content Include="Recursos\assets\img\flags\th.png" />
+    <Content Include="Recursos\assets\img\flags\tj.png" />
+    <Content Include="Recursos\assets\img\flags\tk.png" />
+    <Content Include="Recursos\assets\img\flags\tl.png" />
+    <Content Include="Recursos\assets\img\flags\tm.png" />
+    <Content Include="Recursos\assets\img\flags\tn.png" />
+    <Content Include="Recursos\assets\img\flags\to.png" />
+    <Content Include="Recursos\assets\img\flags\tr.png" />
+    <Content Include="Recursos\assets\img\flags\tt.png" />
+    <Content Include="Recursos\assets\img\flags\tv.png" />
+    <Content Include="Recursos\assets\img\flags\tw.png" />
+    <Content Include="Recursos\assets\img\flags\tz.png" />
+    <Content Include="Recursos\assets\img\flags\ua.png" />
+    <Content Include="Recursos\assets\img\flags\ug.png" />
+    <Content Include="Recursos\assets\img\flags\um.png" />
+    <Content Include="Recursos\assets\img\flags\us.png" />
+    <Content Include="Recursos\assets\img\flags\uy.png" />
+    <Content Include="Recursos\assets\img\flags\uz.png" />
+    <Content Include="Recursos\assets\img\flags\va.png" />
+    <Content Include="Recursos\assets\img\flags\vc.png" />
+    <Content Include="Recursos\assets\img\flags\ve.png" />
+    <Content Include="Recursos\assets\img\flags\vg.png" />
+    <Content Include="Recursos\assets\img\flags\vi.png" />
+    <Content Include="Recursos\assets\img\flags\vn.png" />
+    <Content Include="Recursos\assets\img\flags\vu.png" />
+    <Content Include="Recursos\assets\img\flags\wales.png" />
+    <Content Include="Recursos\assets\img\flags\wf.png" />
+    <Content Include="Recursos\assets\img\flags\ws.png" />
+    <Content Include="Recursos\assets\img\flags\ye.png" />
+    <Content Include="Recursos\assets\img\flags\yt.png" />
+    <Content Include="Recursos\assets\img\flags\za.png" />
+    <Content Include="Recursos\assets\img\flags\zm.png" />
+    <Content Include="Recursos\assets\img\flags\zw.png" />
+    <Content Include="Recursos\assets\img\img-shadow.png" />
+    <Content Include="Recursos\assets\img\jm_denis.jpg" />
+    <Content Include="Recursos\assets\img\kaiadmin\demo1.png" />
+    <Content Include="Recursos\assets\img\kaiadmin\demo2.png" />
+    <Content Include="Recursos\assets\img\kaiadmin\demo3.png" />
+    <Content Include="Recursos\assets\img\kaiadmin\demo4.png" />
+    <Content Include="Recursos\assets\img\kaiadmin\demo5.png" />
+    <Content Include="Recursos\assets\img\kaiadmin\demo6.png" />
+    <Content Include="Recursos\assets\img\kaiadmin\demo7.png" />
+    <Content Include="Recursos\assets\img\kaiadmin\demo8.png" />
+    <Content Include="Recursos\assets\img\kaiadmin\demo9.png" />
+    <Content Include="Recursos\assets\img\kaiadmin\favicon.ico" />
+    <Content Include="Recursos\assets\img\kaiadmin\favicon.png" />
+    <Content Include="Recursos\assets\img\kaiadmin\favicon.svg" />
+    <Content Include="Recursos\assets\img\kaiadmin\icon.png" />
+    <Content Include="Recursos\assets\img\kaiadmin\icon.svg" />
+    <Content Include="Recursos\assets\img\kaiadmin\logo_dark.png" />
+    <Content Include="Recursos\assets\img\kaiadmin\logo_dark.svg" />
+    <Content Include="Recursos\assets\img\kaiadmin\logo_documentation.png" />
+    <Content Include="Recursos\assets\img\kaiadmin\logo_light.png" />
+    <Content Include="Recursos\assets\img\kaiadmin\logo_light.svg" />
+    <Content Include="Recursos\assets\img\logoproduct.svg" />
+    <Content Include="Recursos\assets\img\logoproduct2.svg" />
+    <Content Include="Recursos\assets\img\logoproduct3.svg" />
+    <Content Include="Recursos\assets\img\mlane.jpg" />
+    <Content Include="Recursos\assets\img\profile.jpg" />
+    <Content Include="Recursos\assets\img\profile2.jpg" />
+    <Content Include="Recursos\assets\img\sauro.jpg" />
+    <Content Include="Recursos\assets\img\talha.jpg" />
+    <Content Include="Recursos\assets\img\undraw\undraw_blank_canvas_3rbb.svg" />
+    <Content Include="Recursos\assets\img\undraw\undraw_creative_team_r90h.svg" />
+    <Content Include="Recursos\assets\img\undraw\undraw_empty_xct9.svg" />
+    <Content Include="Recursos\assets\img\undraw\undraw_Hello_qnas.svg" />
+    <Content Include="Recursos\assets\img\undraw\undraw_not_found_60pq.svg" />
+    <Content Include="Recursos\assets\img\undraw\undraw_no_data_qbuo.svg" />
+    <Content Include="Recursos\assets\img\undraw\undraw_page_not_found_su7k.svg" />
+    <Content Include="Recursos\assets\img\undraw\undraw_sign_in_e6hj.svg" />
+    <Content Include="Recursos\assets\img\undraw\undraw_tabs_jf82.svg" />
+    <Content Include="Recursos\assets\img\undraw\undraw_Taken_if77.svg" />
+    <Content Include="Recursos\assets\img\undraw\undraw_update_uxn2.svg" />
+    <Content Include="Recursos\assets\img\undraw\undraw_upgrade_06a0.svg" />
+    <Content Include="Recursos\assets\img\visa.svg" />
+    <Content Include="Recursos\assets\js\core\bootstrap.min.js" />
+    <Content Include="Recursos\assets\js\core\jquery-3.7.1.min.js" />
+    <Content Include="Recursos\assets\js\core\popper.min.js" />
+    <Content Include="Recursos\assets\js\demo.js" />
+    <Content Include="Recursos\assets\js\kaiadmin.js" />
+    <Content Include="Recursos\assets\js\kaiadmin.min.js" />
+    <Content Include="Recursos\assets\js\plugin\bootstrap-notify\bootstrap-notify.min.js" />
+    <Content Include="Recursos\assets\js\plugin\bootstrap-tagsinput\bootstrap-tagsinput.min.js" />
+    <Content Include="Recursos\assets\js\plugin\bootstrap-toggle\bootstrap-toggle.min.js" />
+    <Content Include="Recursos\assets\js\plugin\chart-circle\circles.min.js" />
+    <Content Include="Recursos\assets\js\plugin\chart.js\chart.min.js" />
+    <Content Include="Recursos\assets\js\plugin\datatables\datatables.min.js" />
+    <Content Include="Recursos\assets\js\plugin\datepicker\bootstrap-datetimepicker.min.js" />
+    <Content Include="Recursos\assets\js\plugin\dropzone\dropzone.min.js" />
+    <Content Include="Recursos\assets\js\plugin\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Recursos\assets\js\plugin\gmaps\gmaps.js" />
+    <Content Include="Recursos\assets\js\plugin\jquery-scrollbar\jquery.scrollbar.min.js" />
+    <Content Include="Recursos\assets\js\plugin\jquery.magnific-popup\jquery.magnific-popup.min.js" />
+    <Content Include="Recursos\assets\js\plugin\jquery.sparkline\jquery.sparkline.min.js" />
+    <Content Include="Recursos\assets\js\plugin\jquery.validate\jquery.validate.min.js" />
+    <Content Include="Recursos\assets\js\plugin\jsvectormap\jsvectormap.min.js" />
+    <Content Include="Recursos\assets\js\plugin\jsvectormap\world.js" />
+    <Content Include="Recursos\assets\js\plugin\list.js\list.min.js" />
+    <Content Include="Recursos\assets\js\plugin\moment\moment.min.js" />
+    <Content Include="Recursos\assets\js\plugin\owl-carousel\ajax-loader.gif" />
+    <Content Include="Recursos\assets\js\plugin\owl-carousel\owl.carousel.min.js" />
+    <Content Include="Recursos\assets\js\plugin\owl-carousel\owl.video.play.png" />
+    <Content Include="Recursos\assets\js\plugin\select2\select2.full.min.js" />
+    <Content Include="Recursos\assets\js\plugin\sortable\sortable.min.js" />
+    <Content Include="Recursos\assets\js\plugin\sticky-sidebar\sticky-sidebar.min.js" />
+    <Content Include="Recursos\assets\js\plugin\summernote\summernote-lite.min.js" />
+    <Content Include="Recursos\assets\js\plugin\sweetalert\sweetalert.min.js" />
+    <Content Include="Recursos\assets\js\plugin\webfont\webfont.min.js" />
+    <Content Include="Recursos\assets\js\setting-demo.js" />
+    <Content Include="Recursos\assets\js\setting-demo2.js" />
+    <Content Include="Recursos\dif.jpg" />
+    <Content Include="Recursos\dif.png" />
+    <Content Include="Recursos\Estilos\Estilos.css" />
+    <Content Include="Recursos\Estilos\Estilos1.css" />
+    <Content Include="Recursos\fondo.jpg" />
+    <Content Include="Recursos\puerta.jpeg" />
+    <Content Include="RegistroP.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateEvent.aspx.cs">
+      <DependentUpon>CreateEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateEvent.aspx.designer.cs">
+      <DependentUpon>CreateEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegP.aspx.cs">
+      <DependentUpon>FormRegP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormRegP.aspx.designer.cs">
+      <DependentUpon>FormRegP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IndexP.aspx.cs">
+      <DependentUpon>IndexP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndexP.aspx.designer.cs">
+      <DependentUpon>IndexP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginP.aspx.cs">
+      <DependentUpon>LoginP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginP.aspx.designer.cs">
+      <DependentUpon>LoginP.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecPass.aspx.cs">
+      <DependentUpon>RecPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecPass.aspx.designer.cs">
+      <DependentUpon>RecPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroP.aspx.cs">
+      <DependentUpon>RegistroP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroP.aspx.designer.cs">
+      <DependentUpon>RegistroP.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Recursos\assets\css\demo.css.map" />
+    <Content Include="Recursos\assets\css\kaiadmin.css.map" />
+    <Content Include="Recursos\assets\css\plugins.css.map" />
+    <Content Include="Recursos\assets\fonts\fontawesome\fa-brands-400.eot" />
+    <Content Include="Recursos\assets\fonts\fontawesome\fa-brands-400.ttf" />
+    <Content Include="Recursos\assets\fonts\fontawesome\fa-brands-400.woff" />
+    <Content Include="Recursos\assets\fonts\fontawesome\fa-brands-400.woff2" />
+    <Content Include="Recursos\assets\fonts\fontawesome\fa-regular-400.eot" />
+    <Content Include="Recursos\assets\fonts\fontawesome\fa-regular-400.ttf" />
+    <Content Include="Recursos\assets\fonts\fontawesome\fa-regular-400.woff" />
+    <Content Include="Recursos\assets\fonts\fontawesome\fa-regular-400.woff2" />
+    <Content Include="Recursos\assets\fonts\fontawesome\fa-solid-900.eot" />
+    <Content Include="Recursos\assets\fonts\fontawesome\fa-solid-900.ttf" />
+    <Content Include="Recursos\assets\fonts\fontawesome\fa-solid-900.woff" />
+    <Content Include="Recursos\assets\fonts\fontawesome\fa-solid-900.woff2" />
+    <Content Include="Recursos\assets\fonts\simple-line-icons\Simple-Line-Icons.eot" />
+    <Content Include="Recursos\assets\fonts\simple-line-icons\Simple-Line-Icons.ttf" />
+    <Content Include="Recursos\assets\fonts\simple-line-icons\Simple-Line-Icons.woff" />
+    <Content Include="Recursos\assets\fonts\simple-line-icons\Simple-Line-Icons.woff2" />
+    <Content Include="Recursos\assets\fonts\summernote\summernote.eot" />
+    <Content Include="Recursos\assets\fonts\summernote\summernote.ttf" />
+    <Content Include="Recursos\assets\fonts\summernote\summernote.woff" />
+    <Content Include="Recursos\assets\fonts\summernote\summernote.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
