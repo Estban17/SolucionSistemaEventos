@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RegistroP.aspx.cs" Inherits="SistemaEventos.RegistroP" %>
+﻿z<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RegistroP.aspx.cs" Inherits="SistemaEventos.RegistroP" %>
 
 <!DOCTYPE html>
 
@@ -29,24 +29,31 @@
                 <i class='bx bxs-user ii'></i>
             </div>
 
+            <!-- Apellido Paterno-->
+            <div class="input-box">
+                <asp:TextBox ID="tbAPP" CssClass="input" runat="server" placeholder=""></asp:TextBox>
+                <asp:Label ID="lblAPP" CssClass="label" runat="server" Text="Apellido Paterno"></asp:Label>
+                <i class='bx bxs-user ii'></i>
+            </div>
+
+            <!-- Apellido Materno-->
+            <div class="input-box">
+                <asp:TextBox ID="APM" CssClass="input" runat="server" placeholder=""></asp:TextBox>
+                <asp:Label ID="lblAPM" CssClass="label" runat="server" Text="Apellido Materno"></asp:Label>
+                <i class='bx bxs-user ii'></i>
+            </div>
+
             <!-- Correo Electrónico -->
             <div class="input-box">
-                <asp:TextBox ID="tbCorreo" CssClass="input" runat="server" placeholder=""></asp:TextBox>
+                <asp:TextBox ID="tbCorreo" CssClass="input" runat="server" TextMode="Email" placeholder=""></asp:TextBox>
                 <asp:Label ID="lblCorreo" CssClass="label" runat="server" Text="Correo Electrónico"></asp:Label>
                 <i class='bx bxs-envelope ii'></i>
             </div>
 
-            <!-- Contraseña -->
+            <!-- NUmero Telefonico -->
             <div class="input-box">
-                <asp:TextBox ID="tbContrasena" CssClass="input" runat="server" TextMode="Password" placeholder=""></asp:TextBox>
-                <asp:Label ID="lblContrasena" CssClass="label" runat="server" Text="Contraseña"></asp:Label>
-                <i class='bx bxs-lock ii'></i>
-            </div>
-
-            <!-- Confirmación de Contraseña -->
-            <div class="input-box">
-                <asp:TextBox ID="tbConfirmarContrasena" CssClass="input" runat="server" TextMode="Password" placeholder=""></asp:TextBox>
-                <asp:Label ID="lblConfirmarContrasena" CssClass="label" runat="server" Text="Confirmar Contraseña"></asp:Label>
+                <asp:TextBox ID="tbPhone" CssClass="input" runat="server" TextMode="Phone" placeholder=""></asp:TextBox>
+                <asp:Label ID="lblPhone" CssClass="label" runat="server" Text="Telefono"></asp:Label>
                 <i class='bx bxs-lock ii'></i>
             </div>
 

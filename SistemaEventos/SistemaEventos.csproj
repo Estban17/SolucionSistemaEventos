@@ -460,7 +460,7 @@
     <Content Include="Recursos\Estilos\Estilos.css" />
     <Content Include="Recursos\Estilos\Estilos1.css" />
     <Content Include="Recursos\fondo.jpg" />
-    <Content Include="Recursos\puerta.jpeg" />
+    <Content Include="Recursos\puerta.jpg" />
     <Content Include="RegistroP.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
