@@ -38,8 +38,15 @@
 
             <!-- Apellido Materno-->
             <div class="input-box">
-                <asp:TextBox ID="APM" CssClass="input" runat="server" placeholder=""></asp:TextBox>
+                <asp:TextBox ID="tbAPM" CssClass="input" runat="server" placeholder=""></asp:TextBox>
                 <asp:Label ID="lblAPM" CssClass="label" runat="server" Text="Apellido Materno"></asp:Label>
+                <i class='bx bxs-user ii'></i>
+            </div>
+
+            <!-- CURP -->
+            <div class="input-box">
+                <asp:TextBox ID="tbCURP" CssClass="input" runat="server" placeholder=""></asp:TextBox>
+                <asp:Label ID="lblCURP" CssClass="label" runat="server" Text="Curp"></asp:Label>
                 <i class='bx bxs-user ii'></i>
             </div>
 

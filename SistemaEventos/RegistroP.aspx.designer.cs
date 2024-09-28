@@ -69,13 +69,13 @@ namespace SistemaEventos
         protected global::System.Web.UI.WebControls.Label lblAPP;
 
         /// <summary>
-        /// Control APM.
+        /// Control tbAPM.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox APM;
+        protected global::System.Web.UI.WebControls.TextBox tbAPM;
 
         /// <summary>
         /// Control lblAPM.
@@ -85,6 +85,24 @@ namespace SistemaEventos
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblAPM;
+
+        /// <summary>
+        /// Control tbCURP.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbCURP;
+
+        /// <summary>
+        /// Control lblCURP.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCURP;
 
         /// <summary>
         /// Control tbCorreo.

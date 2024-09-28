@@ -43,6 +43,9 @@
             <div class="box" onclick="window.location.href='Login.aspx';">
                 <h2>Administrador</h2>
             </div>
+            <div class="box" onclick="window.location.href='IndexP.aspx';">
+                <h2>Iniciar</h2>
+            </div>
         </div>
     </form>
 </body>
