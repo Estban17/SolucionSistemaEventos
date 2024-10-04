@@ -33,22 +33,22 @@ namespace SistemaEventos.Participante
         protected global::System.Web.UI.WebControls.Label lblBienvenida;
 
         /// <summary>
-        /// Control tbUsuario.
+        /// tbCURP control.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbUsuario;
+        protected global::System.Web.UI.WebControls.TextBox tbCURP;
 
         /// <summary>
-        /// Control lblUsuario.
+        /// lblCURP control.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUsuario;
+        protected global::System.Web.UI.WebControls.Label lblCURP;
 
         /// <summary>
         /// Control tbContrasena.

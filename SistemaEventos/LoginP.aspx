@@ -24,9 +24,9 @@
             </div>
 
             <div class="input-box">
-                <asp:TextBox ID="tbUsuario" CssClass="input" runat="server" placeholder=""></asp:TextBox>
-                <asp:Label ID="lblUsuario" CssClass="label" runat="server" Text="Usuario"></asp:Label>
-                <i class='bx bxs-user ii'></i>
+                <asp:TextBox ID="tbCURP" CssClass="input" runat="server" placeholder=""></asp:TextBox>
+                <asp:Label ID="lblCURP" CssClass="label" runat="server" Text="CURP"></asp:Label>
+                <i class='bx bxs-id-card ii'></i>
             </div>
 
             <div class="input-box">

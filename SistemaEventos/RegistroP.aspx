@@ -28,25 +28,32 @@
                 <i class='bx bxs-user ii'></i>
             </div>
 
-            <!-- Nombre de Usuario -->
+            <!-- Nombre -->
             <div class="input-box">
-                <asp:TextBox ID="tbUsuario" CssClass="input" runat="server" placeholder=""></asp:TextBox>
-                <asp:Label ID="lblUsuario" CssClass="label" runat="server" Text="Nombre"></asp:Label>
+                <asp:TextBox ID="tbNombre" CssClass="input" runat="server" placeholder=""></asp:TextBox>
+                <asp:Label ID="lblNombre" CssClass="label" runat="server" Text="Nombre"></asp:Label>
                 <i class='bx bxs-user ii'></i>
             </div>
 
-            <!-- Apellido Paterno-->
+            <!-- Apellido Paterno -->
             <div class="input-box">
-                <asp:TextBox ID="tbAPP" CssClass="input" runat="server" placeholder=""></asp:TextBox>
-                <asp:Label ID="lblAPP" CssClass="label" runat="server" Text="Apellido Paterno"></asp:Label>
+                <asp:TextBox ID="tbPaterno" CssClass="input" runat="server" placeholder=""></asp:TextBox>
+                <asp:Label ID="lblPaterno" CssClass="label" runat="server" Text="Apellido Paterno"></asp:Label>
                 <i class='bx bxs-user ii'></i>
             </div>
 
-            <!-- Apellido Materno-->
+            <!-- Apellido Materno -->
             <div class="input-box">
-                <asp:TextBox ID="tbAPM" CssClass="input" runat="server" placeholder=""></asp:TextBox>
-                <asp:Label ID="lblAPM" CssClass="label" runat="server" Text="Apellido Materno"></asp:Label>
+                <asp:TextBox ID="tbMaterno" CssClass="input" runat="server" placeholder=""></asp:TextBox>
+                <asp:Label ID="lblMaterno" CssClass="label" runat="server" Text="Apellido Materno"></asp:Label>
                 <i class='bx bxs-user ii'></i>
+            </div>
+
+            <!-- CURP -->
+            <div class="input-box">
+                <asp:TextBox ID="tbCURP" CssClass="input" runat="server" placeholder=""></asp:TextBox>
+                <asp:Label ID="lblCURP" CssClass="label" runat="server" Text="CURP"></asp:Label>
+                <i class='bx bxs-id-card ii'></i>
             </div>
 
             <!-- Correo Electrónico -->
@@ -56,7 +63,28 @@
                 <i class='bx bxs-envelope ii'></i>
             </div>
 
-            <!-- NUmero Telefonico -->
+            <!-- Teléfono -->
+            <div class="input-box">
+                <asp:TextBox ID="tbTelefono" CssClass="input" runat="server" placeholder=""></asp:TextBox>
+                <asp:Label ID="lblTelefono" CssClass="label" runat="server" Text="Teléfono"></asp:Label>
+                <i class='bx bxs-phone ii'></i>
+            </div>
+
+            <!-- Estado -->
+            <div class="input-box">
+                <asp:TextBox ID="tbEstado" CssClass="input" runat="server" placeholder=""></asp:TextBox>
+                <asp:Label ID="lblEstado" CssClass="label" runat="server" Text="Estado"></asp:Label>
+                <i class='bx bxs-map ii'></i>
+            </div>
+
+            <!-- Empresa -->
+            <div class="input-box">
+                <asp:TextBox ID="tbEmpresa" CssClass="input" runat="server" placeholder=""></asp:TextBox>
+                <asp:Label ID="lblEmpresa" CssClass="label" runat="server" Text="Empresa"></asp:Label>
+                <i class='bx bxs-building ii'></i>
+            </div>
+
+            <!-- Contraseña -->
             <div class="input-box">
                 <asp:TextBox ID="tbPhone" CssClass="input" runat="server" TextMode="Phone" placeholder=""></asp:TextBox>
                 <asp:Label ID="lblPhone" CssClass="label" runat="server" Text="Telefono"></asp:Label>
@@ -84,4 +112,3 @@
     </div>
 </body>
 </html>
-
