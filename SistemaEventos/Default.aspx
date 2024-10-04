@@ -37,7 +37,7 @@
 <body>
     <form id="form1" runat="server">
         <div class="container">
-            <div class="box" onclick="window.location.href='RegistroP.aspx';">
+            <div class="box" onclick="window.location.href='LoginP.aspx';">
                 <h2>Participante</h2>
             </div>
             <div class="box" onclick="window.location.href='Login.aspx';">

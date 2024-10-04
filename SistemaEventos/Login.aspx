@@ -23,7 +23,7 @@
                 <asp:Label Class="hh1" ID="lblBienvenida" runat="server" Text="Iniciar sesion como Administrador"></asp:Label>
             </div>
 
-            <div class="input-box">
+             <div class="input-box">
                 <asp:TextBox ID="tbUsuario" CssClass="input" runat="server" placeholder=""></asp:TextBox>
                 <asp:Label ID="lblUsuario" CssClass="label" runat="server" Text="Usuario"></asp:Label>
                 <i class='bx bxs-user ii'></i>
@@ -46,6 +46,7 @@
             <div class="row">
                 <asp:Button CssClass="boton" ID="btnIngresar" runat="server" Text="Ingresar" OnClick="btnIngresar_Click" />
             </div>
+           
 
         </form>
 

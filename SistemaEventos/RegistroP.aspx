@@ -98,9 +98,9 @@
             <br />
 
             <!-- Enlace para volver al inicio de sesión -->
-            <!-- <div class="row">
-    <a href="LoginP.aspx" class="forgot-password-link">¿Ya tienes cuenta? Inicia sesión aquí</a>
-</div> -->
+            <div class="row">
+                <a href="LoginP.aspx" class="forgot-password-link">¿Ya tienes cuenta? Inicia sesión aquí</a>
+            </div>
 
         </form>
     </div>
