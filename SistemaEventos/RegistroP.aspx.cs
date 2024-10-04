@@ -23,7 +23,7 @@ namespace SistemaEventos
                 // Registro exitoso
                 // Lógica de guardado en la base de datos aquí...
                 // Puedes mostrar un mensaje de confirmación o redirigir al login
-                Response.Redirect("LoginP.aspx");
+                Response.Redirect("IndexP.aspx");
             //}
             //else
             //{

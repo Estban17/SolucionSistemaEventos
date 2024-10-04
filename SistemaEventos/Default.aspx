@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SistemaEventos.Default" %>
+﻿<%@ Page Title="" Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SistemaEventos.Default" %>
 
 <!DOCTYPE html>
 
@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('Recursos/puerta.jpeg');
+            background-image: url('Recursos/puerta.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-color: #f4f4f4;
@@ -37,15 +37,13 @@
 <body>
     <form id="form1" runat="server">
         <div class="container">
-            <div class="box" onclick="window.location.href='LoginP.aspx';">
+            <div class="box" onclick="window.location.href='RegistroP.aspx';">
                 <h2>Participante</h2>
             </div>
             <div class="box" onclick="window.location.href='Login.aspx';">
                 <h2>Administrador</h2>
             </div>
-            <div class="box" onclick="window.location.href='IndexP.aspx';">
-                <h2>Iniciar</h2>
-            </div>
+        
         </div>
     </form>
 </body>

@@ -21,6 +21,12 @@
             <div class="row">
                 <asp:Label Class="hh1" ID="lblBienvenida" runat="server" Text="Registro de Participantes"></asp:Label>
             </div>
+            <!-- CURP -->
+            <div class="input-box">
+                <asp:TextBox ID="tbCURP" CssClass="input" runat="server" placeholder=""></asp:TextBox>
+                <asp:Label ID="lblCURP" CssClass="label" runat="server" Text="Curp"></asp:Label>
+                <i class='bx bxs-user ii'></i>
+            </div>
 
             <!-- Nombre de Usuario -->
             <div class="input-box">
@@ -43,13 +49,6 @@
                 <i class='bx bxs-user ii'></i>
             </div>
 
-            <!-- CURP -->
-            <div class="input-box">
-                <asp:TextBox ID="tbCURP" CssClass="input" runat="server" placeholder=""></asp:TextBox>
-                <asp:Label ID="lblCURP" CssClass="label" runat="server" Text="Curp"></asp:Label>
-                <i class='bx bxs-user ii'></i>
-            </div>
-
             <!-- Correo Electrónico -->
             <div class="input-box">
                 <asp:TextBox ID="tbCorreo" CssClass="input" runat="server" TextMode="Email" placeholder=""></asp:TextBox>
@@ -64,16 +63,22 @@
                 <i class='bx bxs-lock ii'></i>
             </div>
 
+            <!-- Recaptcha -->
+            <br />
+            <div>
+                <div class="g-recaptcha" data-sitekey="6LdewAMqAAAAAEkDaxlLoMlDRbto_w3-rDN4CPyH"></div>
+            </div>
+
             <!-- Botón de Registro -->
             <div class="row">
-                <asp:Button CssClass="boton" ID="btnRegistrar" runat="server" Text="Registrar" OnClick="btnRegistrar_Click" />
+                <asp:Button CssClass="boton" ID="btnRegistrar" runat="server" Text="Iniciar" OnClick="btnRegistrar_Click" />
             </div>
             <br />
 
             <!-- Enlace para volver al inicio de sesión -->
-            <div class="row">
-                <a href="LoginP.aspx" class="forgot-password-link">¿Ya tienes cuenta? Inicia sesión aquí</a>
-            </div>
+            <!-- <div class="row">
+    <a href="LoginP.aspx" class="forgot-password-link">¿Ya tienes cuenta? Inicia sesión aquí</a>
+</div> -->
 
         </form>
     </div>
