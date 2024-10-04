@@ -10,7 +10,6 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="Recursos/Estilos/Estilos.css" rel="stylesheet" />
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <title>Registro de Participantes</title>
 </head>
@@ -20,12 +19,6 @@
 
             <div class="row">
                 <asp:Label Class="hh1" ID="lblBienvenida" runat="server" Text="Registro de Participantes"></asp:Label>
-            </div>
-            <!-- CURP -->
-            <div class="input-box">
-                <asp:TextBox ID="tbCURP" CssClass="input" runat="server" placeholder=""></asp:TextBox>
-                <asp:Label ID="lblCURP" CssClass="label" runat="server" Text="Curp"></asp:Label>
-                <i class='bx bxs-user ii'></i>
             </div>
 
             <!-- Nombre -->
@@ -86,15 +79,16 @@
 
             <!-- Contraseña -->
             <div class="input-box">
-                <asp:TextBox ID="tbPhone" CssClass="input" runat="server" TextMode="Phone" placeholder=""></asp:TextBox>
-                <asp:Label ID="lblPhone" CssClass="label" runat="server" Text="Telefono"></asp:Label>
+                <asp:TextBox ID="tbContrasena" CssClass="input" runat="server" TextMode="Password" placeholder=""></asp:TextBox>
+                <asp:Label ID="lblContrasena" CssClass="label" runat="server" Text="Contraseña"></asp:Label>
                 <i class='bx bxs-lock ii'></i>
             </div>
 
-            <!-- Recaptcha -->
-            <br />
-            <div>
-                <div class="g-recaptcha" data-sitekey="6LdewAMqAAAAAEkDaxlLoMlDRbto_w3-rDN4CPyH"></div>
+            <!-- Confirmar Contraseña -->
+            <div class="input-box">
+                <asp:TextBox ID="tbConfirmarContrasena" CssClass="input" runat="server" TextMode="Password" placeholder=""></asp:TextBox>
+                <asp:Label ID="lblConfirmarContrasena" CssClass="label" runat="server" Text="Confirmar contraseña"></asp:Label>
+                <i class='bx bxs-lock ii'></i>
             </div>
 
             <!-- Botón de Registro -->
