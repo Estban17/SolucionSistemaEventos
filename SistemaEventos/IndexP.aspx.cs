@@ -11,7 +11,15 @@ namespace SistemaEventos.Participante
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["usuario"] != null)
+            {
+                string usuariolog = Session["usuario"].ToString();
+                lblBienvenida.Text = "Bienvenid@ " + usuariolog;
+            }
+            else
+            {
+                Response.Redirect("LoginP.aspx");
+            }
         }
         protected void btnCerrar_Click(object sender, EventArgs e)
         {

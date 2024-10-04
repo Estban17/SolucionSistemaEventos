@@ -82,17 +82,24 @@
                         <%--<asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="txtNombre" ErrorMessage="Nombre es requerido" ForeColor="Red" CssClass="form-text"></asp:RequiredFieldValidator>--%>
                     </div>
 
-                    <!-- Apellido -->
+                    <!-- Apellido Paterno -->
                     <div class="mb-3">
-                        <asp:Label ID="lblApellido" runat="server" Text="Apellido: " CssClass="form-label"></asp:Label>
-                        <asp:TextBox ID="txtApellido" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:Label ID="lblApellidoP" runat="server" Text="Apellido Paterno: " CssClass="form-label"></asp:Label>
+                        <asp:TextBox ID="txtApellidoP" runat="server" CssClass="form-control"></asp:TextBox>
                         <%--<asp:RequiredFieldValidator ID="rfvApellido" runat="server" ControlToValidate="txtApellido" ErrorMessage="Apellido es requerido" ForeColor="Red" CssClass="form-text"></asp:RequiredFieldValidator>--%>
                     </div>
 
-                    <!-- Email -->
+                    <!-- Apellido Materno -->
                     <div class="mb-3">
-                        <asp:Label ID="lblEmail" runat="server" Text="Email: " CssClass="form-label"></asp:Label>
-                        <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:Label ID="lblApellidoM" runat="server" Text="Apellido Materno: " CssClass="form-label"></asp:Label>
+                        <asp:TextBox ID="txtApellidoM" runat="server" CssClass="form-control"></asp:TextBox>
+                        <%--<asp:RequiredFieldValidator ID="rfvApellido" runat="server" ControlToValidate="txtApellido" ErrorMessage="Apellido es requerido" ForeColor="Red" CssClass="form-text"></asp:RequiredFieldValidator>--%>
+                    </div>
+
+                    <!-- Curp -->
+                    <div class="mb-3">
+                        <asp:Label ID="lblCURP" runat="server" Text="CURP: " CssClass="form-label"></asp:Label>
+                        <asp:TextBox ID="txtCURP" runat="server" CssClass="form-control"></asp:TextBox>
                         <%--<asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email es requerido" ForeColor="Red" CssClass="form-text"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email inválido" ValidationExpression="\w+@\w+\.\w+" ForeColor="Red" CssClass="form-text"></asp:RegularExpressionValidator>--%>
                     </div>
