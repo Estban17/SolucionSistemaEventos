@@ -26,5 +26,9 @@ namespace SistemaEventos.Participante
             Session.Remove("usuario");
             Response.Redirect("LoginP.aspx");
         }
+        protected void btnVerEvent_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

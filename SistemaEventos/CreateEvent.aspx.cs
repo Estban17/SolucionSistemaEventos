@@ -20,7 +20,20 @@ namespace SistemaEventos
         }
         protected void btnCrearEvento_Click(object sender, EventArgs e)
         {
-            Response.Redirect("CreateEvent.aspx");
+            string script = @"
+        Swal.fire({
+            title: 'Creación de evento',
+            text: 'Evento creado',
+            icon: 'success',
+            confirmButtonText: 'Aceptar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = 'CreateEvent.aspx'; // Redirigir después de aceptar
+            }
+        });";
+
+            ClientScript.RegisterStartupScript(this.GetType(), "CrearEventoAlert", script, true);
         }
+
     }
 }

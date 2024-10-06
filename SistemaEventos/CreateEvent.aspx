@@ -3,6 +3,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -42,11 +45,11 @@
                         </a>
                         <ul class="collapse" id="readEvento">
                             <li class="nav-item">
-                                <a class="nav-link ms-3" href="Menu1.aspx">Ver eventos</a>
+                                <a class="nav-link ms-3" href="Index.aspx">Ver eventos</a>
                             </li>
-                            <li class="nav-item">
+                           <!-- <li class="nav-item">
                                 <a class="nav-link ms-3" href="Menu1.aspx">Actualizar eventos</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </li>
                     <%--<li class="nav-item">
@@ -132,9 +135,8 @@
                         <label for="txtLugar" class="form-label">Lugar:</label>
                         <asp:TextBox ID="txtLugar" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
-
-                    <asp:Button ID="btnCrearEvento" runat="server" Text="Crear Evento" CssClass="btn btn-primary" OnClick="btnCrearEvento_Click" />
-                    <asp:Label ID="lblMessage" runat="server" CssClass="text-success mt-3"></asp:Label>
+                     <asp:Button ID="btnCrearEvento" runat="server" Text="Crear Evento" CssClass="btn btn-primary" OnClick="btnCrearEvento_Click" />
+                     <asp:Label ID="lblMessage" runat="server" CssClass="text-success mt-3"></asp:Label>
                 </div>
             </div>
         </div>

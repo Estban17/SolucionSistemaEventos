@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SistemaEventos
 {
-    public partial class Index : System.Web.UI.Page
+    public partial class EditEvent : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,10 +18,10 @@ namespace SistemaEventos
             Session.Remove("usuario");
             Response.Redirect("Login.aspx");
         }
-        protected void btnVerEvent_Click(object sender, EventArgs e)
+        protected void btnEditEvento_Click(object sender, EventArgs e)
         {
-            Response.Redirect("EditEvent.aspx");
+            string script = "Swal.fire({ title: 'Editar Evento', text: 'Evento Editado', icon: 'success', confirmButtonText: 'Aceptar' });";
+            ClientScript.RegisterStartupScript(this.GetType(), "EditEventAlert", script, true);
         }
-
     }
 }

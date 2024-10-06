@@ -35,7 +35,7 @@
                 <i class='bx bxs-lock ii'></i>
             </div>
             <div>
-                <a href="RecPass.aspx" class="forgot-password-link">¿Olvidaste tu contraseña?</a>
+               <asp:LinkButton ID="lnkForgotPassword" runat="server" OnClick="ReContra">¿Olvidaste tu contraseña?</asp:LinkButton>
             </div>
             <br />
             <div>

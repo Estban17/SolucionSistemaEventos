@@ -67,5 +67,11 @@ namespace SistemaEventos.Participante
             }
             return datoAdicional;
         }
+        protected void ReContra(object sender, EventArgs e)
+        {
+            string script = "Swal.fire({ title: 'Recuperación de contraseña', text: 'Contraseña Recuperada', icon: 'success', confirmButtonText: 'Aceptar' });";
+            ClientScript.RegisterStartupScript(this.GetType(), "RecuperarContraseñaAlert", script, true);
+        }
+
     }
 }

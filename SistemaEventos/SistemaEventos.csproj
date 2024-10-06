@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="CreateEvent.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="EditEvent.aspx" />
     <Content Include="FormRegP.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
@@ -478,6 +479,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditEvent.aspx.cs">
+      <DependentUpon>EditEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditEvent.aspx.designer.cs">
+      <DependentUpon>EditEvent.aspx</DependentUpon>
     </Compile>
     <Compile Include="FormRegP.aspx.cs">
       <DependentUpon>FormRegP.aspx</DependentUpon>

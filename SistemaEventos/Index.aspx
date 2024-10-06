@@ -42,11 +42,11 @@
                         </a>
                         <ul class="collapse" id="readEvento">
                             <li class="nav-item">
-                                <a class="nav-link ms-3" href="Menu1.aspx">Ver eventos</a>
+                                <a class="nav-link ms-3" href="Index.aspx">Ver eventos</a>
                             </li>
-                            <li class="nav-item">
+                          <!--  <li class="nav-item">
                                 <a class="nav-link ms-3" href="Menu1.aspx">Actualizar eventos</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </li>
                     <%--<li class="nav-item">
@@ -103,6 +103,56 @@
                     <h1 class="mb-4">Sistema de Gestion de Eventos</h1>
                     <h4>Agrega, consulta, modifica, elimina y administra eventos institucionales.</h4>
                 </div>
+              <div>
+    <span class="mb-4">Reunión de Jóvenes</span>
+    <asp:Button ID="Button1" runat="server" Text="Ver" CssClass="btn btn-primary btn-round" OnClick="btnVerEvent_Click" />
+</div>
+<hr />
+<div>
+    <span class="mb-4">Taller de Música</span>
+    <asp:Button ID="Button2" runat="server" Text="Ver" CssClass="btn btn-primary btn-round" OnClick="btnVerEvent_Click" />
+</div>
+<hr />
+<div>
+    <span class="mb-4">Charla Motivacional</span>
+    <asp:Button ID="Button3" runat="server" Text="Ver" CssClass="btn btn-primary btn-round" OnClick="btnVerEvent_Click" />
+</div>
+<hr />
+<div>
+    <span class="mb-4">Cine Foro</span>
+    <asp:Button ID="Button4" runat="server" Text="Ver" CssClass="btn btn-primary btn-round" OnClick="btnVerEvent_Click" />
+</div>
+<hr />
+<div>
+    <span class="mb-4">Excursión a la Naturaleza</span>
+    <asp:Button ID="Button5" runat="server" Text="Ver" CssClass="btn btn-primary btn-round" OnClick="btnVerEvent_Click" />
+</div>
+<hr />
+<div>
+    <span class="mb-4">Torneo de Fútbol</span>
+    <asp:Button ID="Button6" runat="server" Text="Ver" CssClass="btn btn-primary btn-round" OnClick="btnVerEvent_Click" />
+</div>
+<hr />
+<div>
+    <span class="mb-4">Encuentro de Lectura</span>
+    <asp:Button ID="Button7" runat="server" Text="Ver" CssClass="btn btn-primary btn-round" OnClick="btnVerEvent_Click" />
+</div>
+<hr />
+<div>
+    <span class="mb-4">Clases de Cocina</span>
+    <asp:Button ID="Button8" runat="server" Text="Ver" CssClass="btn btn-primary btn-round" OnClick="btnVerEvent_Click" />
+</div>
+<hr />
+<div>
+    <span class="mb-4">Conferencia de Tecnología</span>
+    <asp:Button ID="Button9" runat="server" Text="Ver" CssClass="btn btn-primary btn-round" OnClick="btnVerEvent_Click" />
+</div>
+<hr />
+<div>
+    <span class="mb-4">Noche de Juegos</span>
+    <asp:Button ID="Button10" runat="server" Text="Ver" CssClass="btn btn-primary btn-round" OnClick="btnVerEvent_Click" />
+</div>
+
 
                 <!-- Poner los eventos en targetas para que sean mas atractivos -->
 

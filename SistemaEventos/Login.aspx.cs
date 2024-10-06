@@ -52,13 +52,18 @@ namespace SistemaEventos
             //    else
             //    {
 
-                   // string script = "Swal.fire('Contraseña o Usuario incorrecto','Por favor, intentelo de nuevo','error')";
-                   // ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", script, true);
-                //}
-                //con.Connection.Close();
+            // string script = "Swal.fire('Contraseña o Usuario incorrecto','Por favor, intentelo de nuevo','error')";
+            // ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", script, true);
             //}
+            //con.Connection.Close();
+            //}
+           
+        }
+        protected void ReContra(object sender, EventArgs e)
+        {
+            string script = "Swal.fire({ title: 'Recuperación de contraseña', text: 'Contraseña Recuperada', icon: 'success', confirmButtonText: 'Aceptar' });";
+            ClientScript.RegisterStartupScript(this.GetType(), "RecuperarContraseñaAlert", script, true);
         }
 
-        
     }
 }
