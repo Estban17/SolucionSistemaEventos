@@ -4,28 +4,28 @@
 }
 
 /* Barra Lateral */
-.sidebar {
-    width: 200px; /* Ajusta el ancho según tus necesidades */
-    position: fixed;
+/*.sidebar {
+    width: 200px;*/ /* Ajusta el ancho según tus necesidades */
+    /*position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #800000; /* Negro */
-    color: #fff; /* Texto blanco */
-    overflow-y: auto;
-}
+    background-color: #800000;*/ /* Negro */
+    /*color: #fff;*/ /* Texto blanco */
+    /*overflow-y: auto;
+}*/
 
 /* Barra Superior */
-.navbar {
-    width: calc(100% - 200px); /* Ajusta el ancho según el ancho de la barra lateral */
-    margin-left: 200px; /* Ajusta el margen izquierdo según el ancho de la barra lateral */
-}
+/*.navbar {
+    width: 100%;*/ /* Ajusta el ancho según el ancho de la barra lateral */
+    /*margin-left: 200px;*/ /* Ajusta el margen izquierdo según el ancho de la barra lateral */
+/*}*/
 
 /* Contenido Principal */
 #page-content-wrapper {
-    margin-left: 200px; /* Ajusta el margen izquierdo según el ancho de la barra lateral */
-    padding: 20px;
-    width: calc(100% - 200px); /* Ajusta el ancho según el ancho de la barra lateral */
+    /*margin-left: 200px;*/ /* Ajusta el margen izquierdo según el ancho de la barra lateral */
+/*    padding: 20px;*/
+    /*width: calc(100% - 200px);*/ /* Ajusta el ancho según el ancho de la barra lateral */
     margin-top: 56px; /* Deja espacio para la barra de navegación */
 }
 
