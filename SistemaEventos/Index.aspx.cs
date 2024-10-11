@@ -22,6 +22,15 @@ namespace SistemaEventos
         {
             Response.Redirect("EditEvent.aspx");
         }
+        protected void btnNewEvent_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CreateEvent.aspx");
+        }
+
+        protected void btnEventos_Click(object sender, EventArgs e)
+        { 
+            
+        }
 
     }
 }

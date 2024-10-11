@@ -16,70 +16,7 @@
 <body>
     <form id="form2" class="d-center m-0" runat="server">
         <div class="container-fluid">
-            <!-- Barra Lateral -->
-            <!-- <div class="sidebar" id="sidebar">
-                <div class="sidebar-center">´53
-                    <a class="navbar-brand" href="IndexP.aspx">
-                        <img src="Recursos/dif.png" alt="Logo" width="100" height="100" class="d-inline-block align-top">                        
-                    </a>
-                    <div class="sidebar-header p-3">
-                        <h4>Menú</h4>
-                    </div>
-                </div>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#createEvento" data-bs-toggle="collapse">
-                            <i class="bi bi-search"></i>Consultar
-                            <i class="bi bi-chevron-down ms-2"></i>
-                        </a>
-                        <ul class="collapse" id="createEvento">
-                            <li class="nav-item">
-                                <a class="nav-link ms-3" href="Gestion.aspx">Ver eventos</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#readEvento" data-bs-toggle="collapse">
-                            <i class="bi bi-file-earmark-plus"></i>Registrarme
-                            <i class="bi bi-chevron-down ms-2"></i>
-                        </a>
-                        <ul class="collapse" id="readEvento">
-                            <li class="nav-item">
-                                <a class="nav-link ms-3" href="FormRegP.aspx">Registrase a evento</a>
-                            </li>
-                            <%--<li class="nav-item">
-                                <a class="nav-link ms-3" href="Menu1.aspx">Actualizar eventos</a>
-                            </li>--%>
-                        </ul>
-                    </li>
-                   <%-- <li class="nav-item">
-                        <a class="nav-link" href="#option2Menu" data-bs-toggle="collapse">
-                            <i class="bi bi-file-earmark-text"></i>Opción 2
-                            <i class="bi bi-chevron-down ms-2"></i>
-                        </a>
-                        <ul class="collapse" id="option2Menu">
-                            <li class="nav-item">
-                                <a class="nav-link ms-3" href="Menu2.aspx">Subopción 1</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#printMenu" data-bs-toggle="collapse">
-                            <i class="bi bi-file-earmark-text"></i>Imprimir
-                            <i class="bi bi-chevron-down ms-2"></i>
-                        </a>
-                        <ul class="collapse" id="printMenu">
-                            <li class="nav-item">
-                                <a class="nav-link ms-3" href="EPP.aspx">Excel</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link ms-3" href="PDF.aspx">PDF</a>
-                            </li>
-                        </ul>
-                    </li>--%>
-                </ul>
-            </div> -->
-
+       
             <!-- Barra de Navegación Superior -->
             <nav class="navbar container-fluid navbar-expand-lg navbar-dark bg-black fixed-top">
                 <div class="container-fluid">
