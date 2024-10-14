@@ -42,7 +42,7 @@
 
                 <div class="col-4">
                     <div class="card mb-4">
-                        <img src="https://via.placeholder.com/300x200?text=Reunión+de+Jóvenes" class="card-img-top" alt="Reunión de Jóvenes">
+                        <img src="https://blog.paralideres.org/wp-content/uploads/2014/05/hillsong.jpg" class="card-img-top" alt="Reunión de Jóvenes">
                         <div class="card-body">
                             <h5 class="card-title">Reunión de Jóvenes</h5>
                             <p class="card-text">Únete a nosotros para una reunión inspiradora con jóvenes de la comunidad.</p>
@@ -53,7 +53,7 @@
 
                 <div class="col-4">
                     <div class="card mb-4">
-                        <img src="https://via.placeholder.com/300x200?text=Taller+de+Música" class="card-img-top" alt="Taller de Música">
+                        <img src="https://th.bing.com/th/id/R.dd01cd7820dc3d9cb34972d8acaa0bf2?rik=5kYeLnG%2b8GKdKg&pid=ImgRaw&r=0" class="card-img-top" alt="Taller de Música">
                         <div class="card-body">
                             <h5 class="card-title">Taller de Música</h5>
                             <p class="card-text">Aprende a tocar instrumentos y mejora tus habilidades musicales.</p>
@@ -64,7 +64,7 @@
 
                 <div class="col-4">
                     <div class="card mb-4">
-                        <img src="https://via.placeholder.com/300x200?text=Charla+Motivacional" class="card-img-top" alt="Charla Motivacional">
+                        <img src="https://th.bing.com/th/id/R.7822c4a1c670f2d1c3228eea3d3aeace?rik=N5eunFXI4PNXjQ&pid=ImgRaw&r=0" class="card-img-top" alt="Charla Motivacional">
                         <div class="card-body">
                             <h5 class="card-title">Charla Motivacional</h5>
                             <p class="card-text">Inspírate con historias de éxito y superación personal.</p>
@@ -75,7 +75,7 @@
 
                 <div class="col-4">
                     <div class="card mb-4">
-                        <img src="https://via.placeholder.com/300x200?text=Cine+Foro" class="card-img-top" alt="Cine Foro">
+                        <img src="https://th.bing.com/th/id/OIP.MSrZNMlIeTUSITIB2f7QLQHaEK?rs=1&pid=ImgDetMain" class="card-img-top" alt="Cine Foro">
                         <div class="card-body">
                             <h5 class="card-title">Cine Foro</h5>
                             <p class="card-text">Disfruta de una película seguida de un debate interesante.</p>
@@ -86,7 +86,7 @@
 
                 <div class="col-4">
                     <div class="card mb-4">
-                        <img src="https://via.placeholder.com/300x200?text=Excursión+a+la+Naturaleza" class="card-img-top" alt="Excursión a la Naturaleza">
+                        <img src="https://th.bing.com/th/id/R.be965e0c4cf450d4f654c426890a44b4?rik=xO%2f6MN2lhsb03Q&pid=ImgRaw&r=0" class="card-img-top" alt="Excursión a la Naturaleza">
                         <div class="card-body">
                             <h5 class="card-title">Excursión a la Naturaleza</h5>
                             <p class="card-text">Explora la belleza de la naturaleza en una emocionante excursión.</p>
@@ -97,7 +97,7 @@
 
                 <div class="col-4">
                     <div class="card mb-4">
-                        <img src="https://via.placeholder.com/300x200?text=Torneo+de+Fútbol" class="card-img-top" alt="Torneo de Fútbol">
+                        <img src="https://th.bing.com/th/id/OIP.RZSQQrSByspDpmmQaj-xWQHaE7?rs=1&pid=ImgDetMain" class="card-img-top" alt="Torneo de Fútbol">
                         <div class="card-body">
                             <h5 class="card-title">Torneo de Fútbol</h5>
                             <p class="card-text">Participa en un emocionante torneo de fútbol con amigos.</p>
@@ -108,7 +108,7 @@
 
                 <div class="col-4">
                     <div class="card mb-4">
-                        <img src="https://via.placeholder.com/300x200?text=Encuentro+de+Lectura" class="card-img-top" alt="Encuentro de Lectura">
+                        <img src="https://th.bing.com/th/id/OIP.VfVWgLe9Cb99e1aD_x0NoQHaFA?w=263&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top" alt="Encuentro de Lectura">
                         <div class="card-body">
                             <h5 class="card-title">Encuentro de Lectura</h5>
                             <p class="card-text">Disfruta de la lectura y comparte tus libros favoritos.</p>
@@ -119,7 +119,7 @@
 
                 <div class="col-4">
                     <div class="card mb-4">
-                        <img src="https://via.placeholder.com/300x200?text=Clases+de+Cocina" class="card-img-top" alt="Clases de Cocina">
+                        <img src="https://lungarnofirenze.it/wp-content/uploads/2020/01/MT_Laboratorio-cucina-di-Bulli-e-Balene_-ph.-Giovanni-Savi.jpg" class="card-img-top" alt="Clases de Cocina">
                         <div class="card-body">
                             <h5 class="card-title">Clases de Cocina</h5>
                             <p class="card-text">Aprende nuevas recetas y técnicas de cocina en un ambiente divertido.</p>
@@ -130,7 +130,7 @@
 
                 <div class="col-4">
                     <div class="card mb-4">
-                        <img src="https://via.placeholder.com/300x200?text=Conferencia+de+Tecnología" class="card-img-top" alt="Conferencia de Tecnología">
+                        <img src="https://th.bing.com/th/id/OIP.sUiybo4LYkcmi2_a7UiMLgHaEK?rs=1&pid=ImgDetMain" class="card-img-top" alt="Conferencia de Tecnología">
                         <div class="card-body">
                             <h5 class="card-title">Conferencia de Tecnología</h5>
                             <p class="card-text">Descubre las últimas tendencias y avances en el mundo de la tecnología.</p>
@@ -141,7 +141,7 @@
 
                 <div class="col-4">
                     <div class="card mb-4">
-                        <img src="https://via.placeholder.com/300x200?text=Noche+de+Juegos" class="card-img-top" alt="Noche de Juegos">
+                        <img src="https://as01.epimg.net/meristation/imagenes/2020/03/16/reportajes/1584351464_550287_1586779530_noticia_normal.jpg" class="card-img-top" alt="Noche de Juegos">
                         <div class="card-body">
                             <h5 class="card-title">Noche de Juegos</h5>
                             <p class="card-text">Diviértete con una variedad de juegos de mesa y videojuegos.</p>
