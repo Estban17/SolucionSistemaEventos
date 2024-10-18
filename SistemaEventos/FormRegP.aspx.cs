@@ -21,6 +21,9 @@ namespace SistemaEventos
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
             lblMessage.Text = "Registro Finalizado";
+
+            string script = "Swal.fire({ title: 'Registro a la Atividad', text: 'Has sido registrado', icon: 'success', confirmButtonText: 'Confirmar' });";
+            ClientScript.RegisterStartupScript(this.GetType(), "RegistrarParticipante", script, true);
         }
     }
 }

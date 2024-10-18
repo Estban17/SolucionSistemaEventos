@@ -28,7 +28,15 @@ namespace SistemaEventos.Participante
         }
         protected void btnVerEvent_Click(object sender, EventArgs e)
         {
-            
+            //Button btn = (Button)sender;
+            //string eventoSeleccionado = btn.CommandArgument;
+
+            //// Aquí puedes realizar acciones basadas en el evento seleccionado
+            //Response.Write($"Te has registrado para: {eventoSeleccionado}");
+
+            /* Ver desde la bd si el evento tiene mas de una actividad mostrar las actividades par que elija a cual o cuales registrarse, si solo es la
+             * actividad del mismo evento registrarlo automaticamente y si hay un campo estra que llenar mandarlo al formulario*/
+            Response.Redirect("FormRegP.aspx");
         }
     }
 }
