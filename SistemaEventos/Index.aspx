@@ -38,100 +38,49 @@
                 <div>
                     <h1 class="mb-4">Sistema de Gestion de Eventos</h1>
                     <h4>Agrega, consulta, modifica, elimina y administra eventos institucionales.</h4>
+                    <asp:Button ID="btnCreate" runat="server" Text="Nuevo" CssClass="btn btn-primary" OnClick="btnNewEvent_Click" />
+                    <br />
                 </div>
-                <asp:Button ID="btnCreate" runat="server" Text="Nuevo" CssClass="btn btn-primary" OnClick="btnNewEvent_Click" />
-                <table class="table table-bordered table-responsive">
-                    <thead>
-                        <tr>
-                            <th>Evento</th>
-                            <th>Descripción</th>
-                            <th>Editar</th>
-                            <th>Eventos</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Reunión de Jóvenes</td>
-                            <td>Únete a nosotros para una reunión inspiradora con jóvenes de la comunidad.</td>
-                            <td>
-                                <asp:Button ID="Button1" runat="server" Text="Editar" CssClass="btn btn-primary" OnClick="btnVerEvent_Click" /></td>
-                            <td>
-                                <asp:Button ID="EventButton1" runat="server" Text="Eventos" CssClass="btn btn-secondary" OnClick="btnEventos_Click" /></td>
-                        </tr>
-                        <tr>
-                            <td>Taller de Música</td>
-                            <td>Aprende a tocar instrumentos y mejora tus habilidades musicales.</td>
-                            <td>
-                                <asp:Button ID="Button2" runat="server" Text="Editar" CssClass="btn btn-primary" OnClick="btnVerEvent_Click" /></td>
-                            <td>
-                                <asp:Button ID="EventButton2" runat="server" Text="Eventos" CssClass="btn btn-secondary" OnClick="btnEventos_Click" /></td>
-                        </tr>
-                        <tr>
-                            <td>Charla Motivacional</td>
-                            <td>Inspírate con historias de éxito y superación personal.</td>
-                            <td>
-                                <asp:Button ID="Button3" runat="server" Text="Editar" CssClass="btn btn-primary" OnClick="btnVerEvent_Click" /></td>
-                            <td>
-                                <asp:Button ID="EventButton3" runat="server" Text="Eventos" CssClass="btn btn-secondary" OnClick="btnEventos_Click" /></td>
-                        </tr>
-                        <tr>
-                            <td>Cine Foro</td>
-                            <td>Disfruta de una película seguida de un debate interesante.</td>
-                            <td>
-                                <asp:Button ID="Button4" runat="server" Text="Editar" CssClass="btn btn-primary" OnClick="btnVerEvent_Click" /></td>
-                            <td>
-                                <asp:Button ID="EventButton4" runat="server" Text="Eventos" CssClass="btn btn-secondary" OnClick="btnEventos_Click" /></td>
-                        </tr>
-                        <tr>
-                            <td>Excursión a la Naturaleza</td>
-                            <td>Explora la belleza de la naturaleza en una emocionante excursión.</td>
-                            <td>
-                                <asp:Button ID="Button5" runat="server" Text="Editar" CssClass="btn btn-primary" OnClick="btnVerEvent_Click" /></td>
-                            <td>
-                                <asp:Button ID="EventButton5" runat="server" Text="Eventos" CssClass="btn btn-secondary" OnClick="btnEventos_Click" /></td>
-                        </tr>
-                        <tr>
-                            <td>Torneo de Fútbol</td>
-                            <td>Participa en un emocionante torneo de fútbol con amigos.</td>
-                            <td>
-                                <asp:Button ID="Button6" runat="server" Text="Editar" CssClass="btn btn-primary" OnClick="btnVerEvent_Click" /></td>
-                            <td>
-                                <asp:Button ID="EventButton6" runat="server" Text="Eventos" CssClass="btn btn-secondary" OnClick="btnEventos_Click" /></td>
-                        </tr>
-                        <tr>
-                            <td>Encuentro de Lectura</td>
-                            <td>Disfruta de la lectura y comparte tus libros favoritos.</td>
-                            <td>
-                                <asp:Button ID="Button7" runat="server" Text="Editar" CssClass="btn btn-primary" OnClick="btnVerEvent_Click" /></td>
-                            <td>
-                                <asp:Button ID="EventButton7" runat="server" Text="Eventos" CssClass="btn btn-secondary" OnClick="btnEventos_Click" /></td>
-                        </tr>
-                        <tr>
-                            <td>Clases de Cocina</td>
-                            <td>Aprende nuevas recetas y técnicas de cocina en un ambiente divertido.</td>
-                            <td>
-                                <asp:Button ID="Button8" runat="server" Text="Editar" CssClass="btn btn-primary" OnClick="btnVerEvent_Click" /></td>
-                            <td>
-                                <asp:Button ID="EventButton8" runat="server" Text="Eventos" CssClass="btn btn-secondary" OnClick="btnEventos_Click" /></td>
-                        </tr>
-                        <tr>
-                            <td>Conferencia de Tecnología</td>
-                            <td>Descubre las últimas tendencias y avances en el mundo de la tecnología.</td>
-                            <td>
-                                <asp:Button ID="Button9" runat="server" Text="Editar" CssClass="btn btn-primary" OnClick="btnVerEvent_Click" /></td>
-                            <td>
-                                <asp:Button ID="EventButton9" runat="server" Text="Eventos" CssClass="btn btn-secondary" OnClick="btnEventos_Click" /></td>
-                        </tr>
-                        <tr>
-                            <td>Noche de Juegos</td>
-                            <td>Diviértete con una variedad de juegos de mesa y videojuegos.</td>
-                            <td>
-                                <asp:Button ID="Button10" runat="server" Text="Editar" CssClass="btn btn-primary" OnClick="btnVerEvent_Click" /></td>
-                            <td>
-                                <asp:Button ID="EventButton10" runat="server" Text="Eventos" CssClass="btn btn-secondary" OnClick="btnEventos_Click" /></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdEvento" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" AllowSorting="True">
+                    <AlternatingRowStyle BackColor="White"></AlternatingRowStyle>
+                    <Columns>
+                        <asp:BoundField DataField="IdEvento" HeaderText="IdEvento" ReadOnly="True" SortExpression="IdEvento"></asp:BoundField>
+                        <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre"></asp:BoundField>
+                        <asp:BoundField DataField="Descripcion" HeaderText="Descripcion" SortExpression="Descripcion"></asp:BoundField>
+                        <asp:BoundField DataField="TipoEvento" HeaderText="TipoEvento" SortExpression="TipoEvento"></asp:BoundField>
+                        <asp:BoundField DataField="EstadoEvento" HeaderText="EstadoEvento" SortExpression="EstadoEvento"></asp:BoundField>
+                        <asp:BoundField DataField="NumAsistentes" HeaderText="NumAsistentes" SortExpression="NumAsistentes"></asp:BoundField>
+                        <asp:BoundField DataField="RanEdadAsistentes" HeaderText="RanEdadAsistentes" SortExpression="RanEdadAsistentes"></asp:BoundField>
+                        <asp:BoundField DataField="GeneroAsistentes" HeaderText="GeneroAsistentes" SortExpression="GeneroAsistentes"></asp:BoundField>
+                        <asp:BoundField DataField="FechaInicio" HeaderText="FechaInicio" SortExpression="FechaInicio"></asp:BoundField>
+                        <asp:BoundField DataField="FechaFin" HeaderText="FechaFin" SortExpression="FechaFin"></asp:BoundField>
+                        <asp:BoundField DataField="Lugar" HeaderText="Lugar" SortExpression="Lugar"></asp:BoundField>
+                        <asp:BoundField DataField="Usuario" HeaderText="Usuario" SortExpression="Usuario"></asp:BoundField>
+                        <asp:BoundField DataField="FechaCreacion" HeaderText="FechaCreacion" SortExpression="FechaCreacion"></asp:BoundField>
+                        <asp:BoundField DataField="FechaModificacion" HeaderText="FechaModificacion" SortExpression="FechaModificacion"></asp:BoundField>
+                        <asp:ButtonField CommandName="Edit" Text="Editar"></asp:ButtonField>
+                    </Columns>
+                    <EditRowStyle BackColor="#7C6F57"></EditRowStyle>
+
+                    <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White"></FooterStyle>
+
+                    <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White"></HeaderStyle>
+
+                    <PagerStyle HorizontalAlign="Center" BackColor="#666666" ForeColor="White"></PagerStyle>
+
+                    <RowStyle BackColor="#E3EAEB"></RowStyle>
+
+                    <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333"></SelectedRowStyle>
+
+                    <SortedAscendingCellStyle BackColor="#F8FAFA"></SortedAscendingCellStyle>
+
+                    <SortedAscendingHeaderStyle BackColor="#246B61"></SortedAscendingHeaderStyle>
+
+                    <SortedDescendingCellStyle BackColor="#D4DFE1"></SortedDescendingCellStyle>
+
+                    <SortedDescendingHeaderStyle BackColor="#15524A"></SortedDescendingHeaderStyle>
+                </asp:GridView>
+                <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:DefaultConnection %>' SelectCommand="SELECT * FROM [VistaEventos]"></asp:SqlDataSource>
             </div>
         </div>
     </form>
