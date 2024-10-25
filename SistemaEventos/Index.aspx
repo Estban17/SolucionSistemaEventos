@@ -7,6 +7,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="Recursos/Estilos/icon.css" rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>Inicio</title>
 </head>
 <body>
@@ -38,8 +42,10 @@
                 <div>
                     <h1 class="mb-4">Sistema de Gestion de Eventos</h1>
                     <h4>Agrega, consulta, modifica, elimina y administra eventos institucionales.</h4>
-                    <asp:Button ID="btnCreate" runat="server" Text="Nuevo" CssClass="btn btn-primary" OnClick="btnNewEvent_Click" />
-                    <br />
+                     <a href="CreateEvent.aspx" class="icon-button">
+     <i class='bx bxs-add-to-queue'></i>
+ </a>
+                   
                 </div>
                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdEvento" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" AllowSorting="True">
                     <AlternatingRowStyle BackColor="White"></AlternatingRowStyle>
@@ -58,7 +64,18 @@
                         <asp:BoundField DataField="Usuario" HeaderText="Usuario" SortExpression="Usuario"></asp:BoundField>
                         <asp:BoundField DataField="FechaCreacion" HeaderText="FechaCreacion" SortExpression="FechaCreacion"></asp:BoundField>
                         <asp:BoundField DataField="FechaModificacion" HeaderText="FechaModificacion" SortExpression="FechaModificacion"></asp:BoundField>
-                        <asp:ButtonField CommandName="Edit" Text="Editar"></asp:ButtonField>
+
+
+                        <asp:TemplateField>
+                            <ItemTemplate>
+                                <asp:LinkButton ID="btnEditar" runat="server" CommandName="Editar" CommandArgument='<%# Eval("IdEvento") %>' CssClass="icon-button">
+            <i class='bx bxs-edit-alt'></i>
+                                </asp:LinkButton>
+                                <asp:LinkButton ID="btnEliminar" runat="server" CommandName="Eliminar" CommandArgument='<%# Eval("IdEvento") %>' CssClass="icon-button">
+            <i class='bx bxs-trash'></i>
+                                </asp:LinkButton>
+                            </ItemTemplate>
+                        </asp:TemplateField>
                     </Columns>
                     <EditRowStyle BackColor="#7C6F57"></EditRowStyle>
 

@@ -463,6 +463,7 @@
     <Content Include="Recursos\dif.png" />
     <Content Include="Recursos\Estilos\Estilos.css" />
     <Content Include="Recursos\Estilos\Estilos1.css" />
+    <Content Include="Recursos\Estilos\icon.css" />
     <Content Include="Recursos\fondo.jpg" />
     <Content Include="Recursos\puerta.jpg" />
     <Content Include="RegistroP.aspx" />

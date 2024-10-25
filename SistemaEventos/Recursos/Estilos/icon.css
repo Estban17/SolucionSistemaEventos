@@ -1,0 +1,26 @@
+﻿body {
+}
+
+.icon-button {
+    background-color: #007bff; /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white; /* Color del ícono */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    font-size: 24px; /* Tamaño del ícono */
+    display: inline-flex; /* Para centrar el ícono */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición para el hover */
+}
+
+    .icon-button:hover {
+        background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    }
+
+    /* Ajusta el tamaño del ícono */
+    .icon-button i {
+        font-size: 30px; /* Tamaño del ícono */
+    }
