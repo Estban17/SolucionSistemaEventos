@@ -32,9 +32,9 @@ namespace SistemaEventos
             
         }
 
-        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            Response.Redirect("CreateActivity.aspx");
         }
     }
 }

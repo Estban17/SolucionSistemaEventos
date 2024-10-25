@@ -47,7 +47,8 @@
  </a>
                    
                 </div>
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdEvento" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" AllowSorting="True">
+                <br />
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdEvento" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" AllowSorting="True" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                     <AlternatingRowStyle BackColor="White"></AlternatingRowStyle>
                     <Columns>
                         <asp:BoundField DataField="IdEvento" HeaderText="IdEvento" ReadOnly="True" SortExpression="IdEvento"></asp:BoundField>
@@ -65,17 +66,7 @@
                         <asp:BoundField DataField="FechaCreacion" HeaderText="FechaCreacion" SortExpression="FechaCreacion"></asp:BoundField>
                         <asp:BoundField DataField="FechaModificacion" HeaderText="FechaModificacion" SortExpression="FechaModificacion"></asp:BoundField>
 
-
-                        <asp:TemplateField>
-                            <ItemTemplate>
-                                <asp:LinkButton ID="btnEditar" runat="server" CommandName="Editar" CommandArgument='<%# Eval("IdEvento") %>' CssClass="icon-button">
-            <i class='bx bxs-edit-alt'></i>
-                                </asp:LinkButton>
-                                <asp:LinkButton ID="btnEliminar" runat="server" CommandName="Eliminar" CommandArgument='<%# Eval("IdEvento") %>' CssClass="icon-button">
-            <i class='bx bxs-trash'></i>
-                                </asp:LinkButton>
-                            </ItemTemplate>
-                        </asp:TemplateField>
+                        <asp:ButtonField CommandName="Select" Text="agregar" ButtonType="Button" ShowHeader="True" HeaderText="Activiadedes"></asp:ButtonField>
                     </Columns>
                     <EditRowStyle BackColor="#7C6F57"></EditRowStyle>
 
