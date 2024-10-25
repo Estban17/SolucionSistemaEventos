@@ -41,7 +41,8 @@
                     <asp:Button ID="btnCreate" runat="server" Text="Nuevo" CssClass="btn btn-primary" OnClick="btnNewEvent_Click" />
                     <br />
                 </div>
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdEvento" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" AllowSorting="True">
+                <br />
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdEvento" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" AllowSorting="True" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                     <AlternatingRowStyle BackColor="White"></AlternatingRowStyle>
                     <Columns>
                         <asp:BoundField DataField="IdEvento" HeaderText="IdEvento" ReadOnly="True" SortExpression="IdEvento"></asp:BoundField>
@@ -58,7 +59,8 @@
                         <asp:BoundField DataField="Usuario" HeaderText="Usuario" SortExpression="Usuario"></asp:BoundField>
                         <asp:BoundField DataField="FechaCreacion" HeaderText="FechaCreacion" SortExpression="FechaCreacion"></asp:BoundField>
                         <asp:BoundField DataField="FechaModificacion" HeaderText="FechaModificacion" SortExpression="FechaModificacion"></asp:BoundField>
-                        <asp:ButtonField CommandName="Edit" Text="Editar"></asp:ButtonField>
+
+                        <asp:ButtonField CommandName="Select" Text="agregar" ButtonType="Button" ShowHeader="True" HeaderText="Activiadedes"></asp:ButtonField>
                     </Columns>
                     <EditRowStyle BackColor="#7C6F57"></EditRowStyle>
 

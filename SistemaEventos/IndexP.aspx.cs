@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -15,6 +17,7 @@ namespace SistemaEventos.Participante
             {
                 string usuariolog = Session["usuario"].ToString();
                 lblBienvenida.Text = "Bienvenid@ " + usuariolog;
+                CargarEventos();
             }
             else
             {
@@ -26,17 +29,40 @@ namespace SistemaEventos.Participante
             Session.Remove("usuario");
             Response.Redirect("LoginP.aspx");
         }
+        protected void CargarEventos()
+        {
+            // Conexión a la base de datos
+            string connectionString = "Data Source=.;Initial Catalog=GestionEventos;Persist Security Info=True;User ID=sa;Password=123456;TrustServerCertificate=True";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT Nombre, Descripcion, FechaInicio, FechaFin, Lugar, NumAsistentes, Imagen, GeneroAsistentes, RanEdadAsistentes FROM Evento";
+                SqlCommand command = new SqlCommand(query, connection);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+
+                // Enlazar el Repeater con los datos
+                repeaterEventos.DataSource = dataTable;
+                repeaterEventos.DataBind();
+            }
+        }
         protected void btnVerEvent_Click(object sender, EventArgs e)
         {
-            //Button btn = (Button)sender;
-            //string eventoSeleccionado = btn.CommandArgument;
-
-            //// Aquí puedes realizar acciones basadas en el evento seleccionado
-            //Response.Write($"Te has registrado para: {eventoSeleccionado}");
-
-            /* Ver desde la bd si el evento tiene mas de una actividad mostrar las actividades par que elija a cual o cuales registrarse, si solo es la
-             * actividad del mismo evento registrarlo automaticamente y si hay un campo estra que llenar mandarlo al formulario*/
-            Response.Redirect("FormRegP.aspx");
+            Button btn = (Button)sender;
+            string nombreEvento = btn.CommandArgument;
+            Response.Redirect($"DetalleEvento.aspx?evento={nombreEvento}");
         }
+        protected void repeaterEventos_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            // Este es el manejador de eventos para cuando se haga clic en un botón dentro del Repeater
+            if (e.CommandName == "VerEvento")
+            {
+                string nombreEvento = e.CommandArgument.ToString();
+                // Redirigir a otra página con el evento seleccionado
+                Response.Redirect($"DetalleEvento.aspx?evento={nombreEvento}");
+            }
+        }
+
     }
 }

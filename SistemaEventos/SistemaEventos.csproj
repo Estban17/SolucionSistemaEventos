@@ -70,6 +70,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CreateActivity.aspx" />
     <Content Include="CreateEvent.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="EditEvent.aspx" />
@@ -469,6 +470,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateActivity.aspx.cs">
+      <DependentUpon>CreateActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateActivity.aspx.designer.cs">
+      <DependentUpon>CreateActivity.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CreateEvent.aspx.cs">
       <DependentUpon>CreateEvent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
