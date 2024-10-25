@@ -42,10 +42,10 @@
                 <div>
                     <h1 class="mb-4">Sistema de Gestion de Eventos</h1>
                     <h4>Agrega, consulta, modifica, elimina y administra eventos institucionales.</h4>
-                     <a href="CreateEvent.aspx" class="icon-button">
-     <i class='bx bxs-add-to-queue'></i>
- </a>
-                   
+                    <a href="CreateEvent.aspx" class="icon-button">
+                        <i class='bx bxs-add-to-queue'></i>
+                    </a>
+
                 </div>
                 <br />
                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdEvento" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" AllowSorting="True" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
@@ -66,7 +66,16 @@
                         <asp:BoundField DataField="FechaCreacion" HeaderText="FechaCreacion" SortExpression="FechaCreacion"></asp:BoundField>
                         <asp:BoundField DataField="FechaModificacion" HeaderText="FechaModificacion" SortExpression="FechaModificacion"></asp:BoundField>
 
-                        <asp:ButtonField CommandName="Select" Text="agregar" ButtonType="Button" ShowHeader="True" HeaderText="Activiadedes"></asp:ButtonField>
+
+                        <asp:TemplateField HeaderText="Activiadedes">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="LinkButton1" runat="server" CommandName="Select">
+                                    <ion-icon name="eye-outline"></ion-icon>
+SVG
+                                </asp:LinkButton>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+
                     </Columns>
                     <EditRowStyle BackColor="#7C6F57"></EditRowStyle>
 
