@@ -44,7 +44,7 @@ namespace SistemaEventos
             //    if (reader.Read())
             //    {
             //        string datoAdicional1 = DatoAdicional(tbUsuario.Text);
-            
+
 
             //        Session["usuario"] = datoAdicional1;
                     Response.Redirect("Index.aspx");
@@ -52,17 +52,39 @@ namespace SistemaEventos
             //    else
             //    {
 
-            // string script = "Swal.fire('Contraseña o Usuario incorrecto','Por favor, intentelo de nuevo','error')";
-            // ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", script, true);
+            //        string script = "Swal.fire('Contraseña o Usuario incorrecto','Por favor, intentelo de nuevo','error')";
+            //        ClientScript.RegisterStartupScript(this.GetType(), "ErrorAlert", script, true);
+            //    }
+            //    con.Connection.Close();
             //}
-            //con.Connection.Close();
-            //}
-           
+
         }
         protected void ReContra(object sender, EventArgs e)
         {
             string script = "Swal.fire({ title: 'Recuperación de contraseña', text: 'Contraseña Recuperada', icon: 'success', confirmButtonText: 'Aceptar' });";
             ClientScript.RegisterStartupScript(this.GetType(), "RecuperarContraseñaAlert", script, true);
+        }
+
+        private string DatoAdicional(string CURP)
+        {
+            string datoAdicional = string.Empty;
+            string conectar = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+            using (SqlConnection conectarSqlConnection = new SqlConnection(conectar))
+            {
+                string query = "SELECT Nombre FROM VistaParticipante WHERE CURP = @CURP";
+                using (SqlCommand cmd = new SqlCommand(query, conectarSqlConnection))
+                {
+                    cmd.Parameters.AddWithValue("@CURP", CURP);
+
+                    conectarSqlConnection.Open();
+                    object result = cmd.ExecuteScalar();
+                    if (result != null)
+                    {
+                        datoAdicional = result.ToString();
+                    }
+                }
+            }
+            return datoAdicional;
         }
 
     }

@@ -18,23 +18,26 @@ namespace SistemaEventos
             Session.Remove("usuario");
             Response.Redirect("Login.aspx");
         }
-        protected void btnVerEvent_Click(object sender, EventArgs e)
+
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            Response.Redirect("EditEvent.aspx");
-        }
-        protected void btnNewEvent_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("CreateEvent.aspx");
+            if (e.CommandName == "Select")
+            {
+                int id = Convert.ToInt32(e.CommandArgument);
+                // Lógica para ver la actividad
+            }
+            else if (e.CommandName == "Edit")
+            {
+                int id = Convert.ToInt32(e.CommandArgument);
+                // Lógica para editar el evento
+                Response.Redirect("EditEvent.aspx");
+            }
+            else if (e.CommandName == "Delete")
+            {
+                int id = Convert.ToInt32(e.CommandArgument);
+                // Lógica para eliminar el evento
+            }
         }
 
-        protected void btnEventos_Click(object sender, EventArgs e)
-        { 
-            
-        }
-
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            Response.Redirect("CreateActivity.aspx");
-        }
     }
 }
