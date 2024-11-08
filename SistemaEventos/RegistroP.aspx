@@ -93,7 +93,7 @@
 
             <!-- Botón de Registro -->
             <div class="row">
-                <asp:Button CssClass="boton" ID="btnRegistrar" runat="server" Text="Iniciar Seción" OnClick="btnRegistrar_Click" />
+                <asp:Button CssClass="boton" ID="btnRegistrar" runat="server" Text="Registrarse" OnClick="btnRegistrar_Click" />
             </div>
             <br />
 
