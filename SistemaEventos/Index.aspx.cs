@@ -12,12 +12,22 @@ namespace SistemaEventos
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (!IsPostBack)
+                CargarDatos();
         }
-        protected void btnCerrar_Click(object sender, EventArgs e)
+
+        private void CargarDatos()
         {
-            Session.Remove("usuario");
-            Response.Redirect("Login.aspx");
+            try
+            {
+                string 
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
+
 
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
@@ -37,6 +47,12 @@ namespace SistemaEventos
                 int id = Convert.ToInt32(e.CommandArgument);
                 // Lógica para eliminar el evento
             }
+        }
+
+        protected void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Session.Remove("usuario");
+            Response.Redirect("Login.aspx");
         }
 
     }

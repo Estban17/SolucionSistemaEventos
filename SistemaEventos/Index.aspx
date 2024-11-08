@@ -51,7 +51,7 @@
                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdEvento" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" AllowSorting="True">
                     <AlternatingRowStyle BackColor="White"></AlternatingRowStyle>
                     <Columns>
-                        <asp:BoundField DataField="IdEvento" HeaderText="IdEvento" ReadOnly="True" SortExpression="IdEvento"></asp:BoundField>
+                        <asp:BoundField DataField="IdEvento" HeaderText="IdEvento" ReadOnly="True" SortExpression="IdEvento" Visible="false"></asp:BoundField>
                         <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre"></asp:BoundField>
                         <asp:BoundField DataField="Descripcion" HeaderText="Descripcion" SortExpression="Descripcion"></asp:BoundField>
                         <asp:BoundField DataField="TipoEvento" HeaderText="TipoEvento" SortExpression="TipoEvento"></asp:BoundField>
@@ -69,7 +69,7 @@
 
                      <asp:TemplateField HeaderText="Ver Eventos">
             <ItemTemplate>
-                <asp:LinkButton ID="LinkButtonVer" runat="server" CommandName="Select" CommandArgument='<%# Eval("ID") %>'>
+                <asp:LinkButton ID="LinkButtonVer" runat="server" CommandName="Select" CommandArgument='<%# Eval("IdEvento") %>'>
                     <ion-icon name="eye-outline"></ion-icon>
                 </asp:LinkButton>
             </ItemTemplate>
@@ -77,7 +77,7 @@
 
         <asp:TemplateField HeaderText="Editar">
             <ItemTemplate>
-                <asp:LinkButton ID="LinkButtonEditar" runat="server" CommandName="Edit" CommandArgument='<%# Eval("ID") %>'>
+                <asp:LinkButton ID="LinkButtonEditar" runat="server" CommandName="Edit" CommandArgument='<%# Eval("IdEvento") %>'>
                     <ion-icon name="pencil-outline"></ion-icon>
                 </asp:LinkButton>
             </ItemTemplate>
@@ -85,7 +85,7 @@
 
         <asp:TemplateField HeaderText="Eliminar">
             <ItemTemplate>
-                <asp:LinkButton ID="LinkButtonEliminar" runat="server" CommandName="Delete" CommandArgument='<%# Eval("ID") %>' OnClientClick="return confirm('¿Estás seguro de que deseas eliminar este elemento?');">
+                <asp:LinkButton ID="LinkButtonEliminar" runat="server" CommandName="Delete" CommandArgument='<%# Eval("IdEvento") %>' OnClientClick="return confirm('¿Estás seguro de que deseas eliminar este elemento?');">
                     <ion-icon name="trash-outline"></ion-icon>
                 </asp:LinkButton>
             </ItemTemplate>
