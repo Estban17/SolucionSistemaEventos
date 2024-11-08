@@ -55,5 +55,13 @@ namespace SistemaEventos
             Response.Redirect("Login.aspx");
         }
 
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Obtener el IdEvento del evento seleccionado
+            int idEvento = Convert.ToInt32(GridView1.SelectedDataKey.Value);
+
+            // Redirigir a la página de crear actividades, pasando el IdEvento en la URL
+            Response.Redirect($"CreateActivity.aspx?IdEvento={idEvento}");
+        }
     }
 }
