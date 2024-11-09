@@ -11,18 +11,31 @@ namespace SistemaEventos
         {
             if (!IsPostBack)
             {
-                int eventId;
-                // Verificamos si se proporciona el ID del evento en la URL
-                if (int.TryParse(Request.QueryString["IdEvento"], out eventId))
+                // Verificar si se pasó el parámetro "IdEvento"
+                string idParam = Request.QueryString["IdEvento"];
+
+                if (!string.IsNullOrEmpty(idParam))
                 {
-                    LoadEventData(eventId);
+                    int idEvento;
+                    // Intentar convertir el parámetro a un entero
+                    if (int.TryParse(idParam, out idEvento))
+                    {
+                        // Cargar los datos del evento basado en el ID
+                        LoadEventData(idEvento);
+                    }
+                    else
+                    {
+                        // Manejar el caso donde el parámetro no es un entero válido
+                        Response.Write("<script>alert('IdEvento no es válido.');</script>");
+                    }
                 }
                 else
                 {
-                    // Manejo de error si no se encuentra el ID del evento
-                    Response.Redirect("Index.aspx");
+                    // Manejar el caso donde no se pasó el parámetro "IdEvento"
+                    Response.Write("<script>alert('IdEvento no proporcionado.');</script>");
                 }
             }
+
         }
 
         protected void btnCerrar_Click(object sender, EventArgs e)

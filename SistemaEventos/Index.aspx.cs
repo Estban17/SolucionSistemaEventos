@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -13,7 +14,10 @@ namespace SistemaEventos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                CargarDatos();
+            }
         }
 
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -27,14 +31,14 @@ namespace SistemaEventos
             {
                 int id = Convert.ToInt32(e.CommandArgument);
                 // Lógica para editar el evento
-                Response.Redirect("EditEvent.aspx");
+                Response.Redirect($"EditEvent.aspx?IdEvento={id}");
             }
             else if (e.CommandName == "Delete")
             {
                 int id = Convert.ToInt32(e.CommandArgument);
                 // Lógica para eliminar el evento
                 EliminarRegistro(id);
-
+                CargarDatos();
             }
         }
 
@@ -54,12 +58,32 @@ namespace SistemaEventos
             }
         }
 
-        protected void btnCerrar_Click(object sender, EventArgs e)
+        private void CargarDatos()
         {
-            Session.Remove("usuario");
-            Response.Redirect("Login.aspx");
-        }
+            try
+            {
+                string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
 
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string query = "SELECT * FROM Evento";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dataTable = new DataTable();
+
+                    connection.Open();
+                    adapter.Fill(dataTable);
+
+                    GridView1.DataSource = dataTable;
+                    GridView1.DataBind();
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones, por ejemplo, mostrar un mensaje de error
+                Response.Write($"Error: {ex.Message}");
+            }
+        }
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Obtener el IdEvento del evento seleccionado
@@ -68,5 +92,12 @@ namespace SistemaEventos
             // Redirigir a la página de crear actividades, pasando el IdEvento en la URL
             Response.Redirect($"CreateActivity.aspx?IdEvento={idEvento}");
         }
+
+        protected void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Session.Remove("usuario");
+            Response.Redirect("Login.aspx");
+        }
+
     }
 }

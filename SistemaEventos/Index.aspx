@@ -48,8 +48,8 @@
 
                 </div>
                 <br />
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdEvento" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" AllowSorting="True">
-                    <AlternatingRowStyle BackColor="White"></AlternatingRowStyle>
+
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" OnRowCommand="GridView1_RowCommand">
                     <Columns>
                         <asp:BoundField DataField="IdEvento" HeaderText="IdEvento" ReadOnly="True" SortExpression="IdEvento" Visible="false"></asp:BoundField>
                         <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre"></asp:BoundField>
@@ -66,53 +66,54 @@
                         <asp:BoundField DataField="FechaCreacion" HeaderText="FechaCreacion" SortExpression="FechaCreacion"></asp:BoundField>
                         <asp:BoundField DataField="FechaModificacion" HeaderText="FechaModificacion" SortExpression="FechaModificacion"></asp:BoundField>
 
+                        <asp:TemplateField HeaderText="Ver Eventos">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="LinkButtonVer" runat="server" CommandName="Select" CommandArgument='<%# Eval("IdEvento") %>' CssClass="icon-button">
+            <i class='bx bx-list-ol'></i>
+                                </asp:LinkButton>
+                            </ItemTemplate>
+                        </asp:TemplateField>
 
-                     <asp:TemplateField HeaderText="Ver Eventos">
-            <ItemTemplate>
-                <asp:LinkButton ID="LinkButtonVer" runat="server" CommandName="Select" CommandArgument='<%# Eval("IdEvento") %>'>
-                    <ion-icon name="eye-outline"></ion-icon>
-                </asp:LinkButton>
-            </ItemTemplate>
-        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Editar">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="LinkButtonEditar" runat="server" CommandName="Edit" CommandArgument='<%# Eval("IdEvento") %>' CssClass="icon-button">
+            <i class='bx bxs-pencil'></i>
+                                </asp:LinkButton>
+                            </ItemTemplate>
+                        </asp:TemplateField>
 
-        <asp:TemplateField HeaderText="Editar">
-            <ItemTemplate>
-                <asp:LinkButton ID="LinkButtonEditar" runat="server" CommandName="Edit" CommandArgument='<%# Eval("IdEvento") %>'>
-                    <ion-icon name="pencil-outline"></ion-icon>
-                </asp:LinkButton>
-            </ItemTemplate>
-        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="Eliminar">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="LinkButtonEliminar" runat="server" CommandName="Delete" CommandArgument='<%# Eval("IdEvento") %>' CssClass="icon-button" OnClientClick="return confirm('¿Estás seguro de que deseas eliminar este elemento?');">
+           <i class='bx bxs-trash' ></i>
+                                </asp:LinkButton>
+                            </ItemTemplate>
+                        </asp:TemplateField>
 
-        <asp:TemplateField HeaderText="Eliminar">
-            <ItemTemplate>
-                <asp:LinkButton ID="LinkButtonEliminar" runat="server" CommandName="Delete" CommandArgument='<%# Eval("IdEvento") %>' OnClientClick="return confirm('¿Estás seguro de que deseas eliminar este elemento?');">
-                    <ion-icon name="trash-outline"></ion-icon>
-                </asp:LinkButton>
-            </ItemTemplate>
-        </asp:TemplateField>
+                        <editrowstyle backcolor="#7C6F57"></editrowstyle>
+
+                        <footerstyle backcolor="#1C5E55" font-bold="True" forecolor="White"></footerstyle>
+
+                        <headerstyle backcolor="#1C5E55" font-bold="True" forecolor="White"></headerstyle>
+
+                        <pagerstyle horizontalalign="Center" backcolor="#666666" forecolor="White"></pagerstyle>
+
+                        <rowstyle backcolor="#E3EAEB"></rowstyle>
+
+                        <selectedrowstyle backcolor="#C5BBAF" font-bold="True" forecolor="#333333"></selectedrowstyle>
+
+                        <sortedascendingcellstyle backcolor="#F8FAFA"></sortedascendingcellstyle>
+
+                        <sortedascendingheaderstyle backcolor="#246B61"></sortedascendingheaderstyle>
+
+                        <sorteddescendingcellstyle backcolor="#D4DFE1"></sorteddescendingcellstyle>
+
+                        <sorteddescendingheaderstyle backcolor="#15524A"></sorteddescendingheaderstyle>
+
 
                     </Columns>
-                    <EditRowStyle BackColor="#7C6F57"></EditRowStyle>
-
-                    <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White"></FooterStyle>
-
-                    <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White"></HeaderStyle>
-
-                    <PagerStyle HorizontalAlign="Center" BackColor="#666666" ForeColor="White"></PagerStyle>
-
-                    <RowStyle BackColor="#E3EAEB"></RowStyle>
-
-                    <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333"></SelectedRowStyle>
-
-                    <SortedAscendingCellStyle BackColor="#F8FAFA"></SortedAscendingCellStyle>
-
-                    <SortedAscendingHeaderStyle BackColor="#246B61"></SortedAscendingHeaderStyle>
-
-                    <SortedDescendingCellStyle BackColor="#D4DFE1"></SortedDescendingCellStyle>
-
-                    <SortedDescendingHeaderStyle BackColor="#15524A"></SortedDescendingHeaderStyle>
                 </asp:GridView>
-                <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:DefaultConnection %>' SelectCommand="SELECT * FROM [VistaEventos]"></asp:SqlDataSource>
+
             </div>
         </div>
     </form>
