@@ -90,26 +90,7 @@
                             </ItemTemplate>
                         </asp:TemplateField>
 
-                        <editrowstyle backcolor="#7C6F57"></editrowstyle>
-
-                        <footerstyle backcolor="#1C5E55" font-bold="True" forecolor="White"></footerstyle>
-
-                        <headerstyle backcolor="#1C5E55" font-bold="True" forecolor="White"></headerstyle>
-
-                        <pagerstyle horizontalalign="Center" backcolor="#666666" forecolor="White"></pagerstyle>
-
-                        <rowstyle backcolor="#E3EAEB"></rowstyle>
-
-                        <selectedrowstyle backcolor="#C5BBAF" font-bold="True" forecolor="#333333"></selectedrowstyle>
-
-                        <sortedascendingcellstyle backcolor="#F8FAFA"></sortedascendingcellstyle>
-
-                        <sortedascendingheaderstyle backcolor="#246B61"></sortedascendingheaderstyle>
-
-                        <sorteddescendingcellstyle backcolor="#D4DFE1"></sorteddescendingcellstyle>
-
-                        <sorteddescendingheaderstyle backcolor="#15524A"></sorteddescendingheaderstyle>
-
+                     
 
                     </Columns>
                 </asp:GridView>

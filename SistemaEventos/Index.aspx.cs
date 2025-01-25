@@ -31,7 +31,9 @@ namespace SistemaEventos
             {
                 int id = Convert.ToInt32(e.CommandArgument);
                 // Lógica para editar el evento
+                Console.Write("EditEvent.aspx?IdEvento={id}");
                 Response.Redirect($"EditEvent.aspx?IdEvento={id}");
+               
             }
             else if (e.CommandName == "Delete")
             {
